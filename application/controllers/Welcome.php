@@ -23,11 +23,11 @@ class Welcome extends CI_Controller {
 		$this->load->helper('url');
 	}
 	
-	// public function index(){
-	// 	$this->load->view('header');
-	// 	$this->load->view('main');
-	// }
 	public function index(){
+		$this->load->view('header');
+		$this->load->view('main');
+	}
+	public function insert_master(){
 		$this->load->view('header');
 		$this->load->view('insert_master');
 	}
