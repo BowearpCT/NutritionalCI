@@ -19,7 +19,6 @@
     <h1>รายการบริการ</h1>
   </div> -->
 
-  <!-- About Section -->
   <div class="row" >
     <div class="col-sm-6">
      <a href=""><img src="assets/images/rawmaterial.jpg" class="img-circle"  width="100%" height="100%"></a>
@@ -35,7 +34,7 @@
   
   <hr>
   
-  <!-- Menu Section -->
+  
   <div class="row">
     <div class="col-sm-6">
       <a href=""><h1 class="">สารอาหารในเมนูของคุณ</h1></a><br>

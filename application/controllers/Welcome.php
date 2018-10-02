@@ -31,7 +31,9 @@ class Welcome extends CI_Controller {
 	}
 	public function insert_master(){
 		$this->load->view('header');
+		$this->load->view('nav');
 		$this->load->view('insert_master');
+		$this->load->view('footer');
 	}
 	public function history(){
 		$this->load->view('header');

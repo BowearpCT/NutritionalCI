@@ -1,24 +1,17 @@
-<body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">Group 3</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    </div>
-  </div>
-</div>
+
 
 <!-- Header -->
 
 
 <!-- Page content -->
+<div class="container-fluid">
+  <div class="row">
+    <h1 class="text-center">ฟอร์มกรอกข้อมูล</h1>
+  </div>
+</div>
 <div class="container">
-  <h2>Horizontal form</h2>
+  
   <form class="form-horizontal" id="insert">
     <!-- ชื่อ -->
     <div class="form-group">
@@ -33,12 +26,12 @@
     <!-- ชื่อ --> 
     <hr>
     <!-- ชนิด -->
-    <!-- <div class="form-group" >
-      <label class="control-label col-sm-2" for="nameth">ชนิดของอาหาร</label>
+    <div class="form-group" >
+      <!-- <label class="control-label col-sm-2" for="nameth">ชนิดของอาหาร</label>
       <div class="col-sm-2">
         <input type="text" class="form-control" id="type" name="type" placeholder="พลังงาน">
-      </div>
-      <!-- <label class="control-label col-sm-2" for="nameth">ชนิดของอาหาร</label>
+      </div> -->
+      <label class="control-label col-sm-2" for="nameth">ชนิดของอาหาร</label>
       <div class="radio col-sm-3">
         <label><input type="radio" id="type" name="type" value="01" checked>ธัญพืชและผลิตภัณฑ์</label>
       </div>
@@ -77,10 +70,8 @@
       </div>
       <div class="radio col-sm-offset-2 col-sm-3">
         <label><input type="radio" id="type" name="type" value="13">อื่นๆ</label>
-      </div> -->
-
-
-    <!-- </div> --> 
+      </div>
+    </div> 
     <!-- ชนิด -->
     <hr>
     <!-- ส่วนประกอบหลัก -->
@@ -183,7 +174,7 @@
                 var formdata = {
                     "thname" : $("#thname").val(),
                     "enname" : $("#enname").val(),
-                    // "type" : $("#type").val(),
+                    "type" : $("#type").val(),
                     "composition" :{
                         "energy" : $("#energy").val(),
                         "water" : $("#water").val(),
@@ -220,10 +211,4 @@
 </script>
 
 
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-32">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
 
-</body>
-</html>
