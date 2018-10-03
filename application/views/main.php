@@ -21,12 +21,12 @@
 
   <div class="row" >
     <div class="col-sm-6">
-     <a href=""><img src="assets/images/rawmaterial.jpg" class="img-circle"  width="100%" height="100%"></a>
+     <a href=""><img src="assets/images/all.jpg" class="img-circle"  width="100%" height="100%"></a>
     </div>
 
     <div class="col-sm-6">
-      <a href=""><h1 class="w3-center">ค้นหาอาหาร</h1></a><br>
-      <h5 class="w3-center">ข้อมูลของอาหารไทยปรุงรสสำเร็จและอาหารจานเดี่ยว</h5>
+      <a href=""><h1 class="text-center">ค้นหาอาหาร</h1></a><br>
+      <h4 class="text-center">ข้อมูลของอาหารไทยปรุงรสสำเร็จและอาหารจานเดี่ยว</h5>
       
       
     </div>
@@ -37,13 +37,13 @@
   
   <div class="row">
     <div class="col-sm-6">
-      <a href=""><h1 class="">สารอาหารในเมนูของคุณ</h1></a><br>
-      <h4>คำนวนสารอาหารที่ได้ในสูตรเมนูของคุณ หรือเมนูที่คุณคิดค้นขึ้นเอง</h4>
+      <a href=""><h1 class="text-center">สารอาหารในเมนูของคุณ</h1></a><br>
+      <h4 class="text-center">คำนวนสารอาหารที่ได้ในสูตรเมนูของคุณ หรือเมนูที่คุณคิดค้นขึ้นเอง</h4>
       
     </div>
     
     <div class="col-sm-6">
-      <a href="" ><img  src="assets/images/rawmaterial.jpg" class="img-circle" width="100%" height="100%"></a>
+      <a href="" ><img  src="assets/images/tomyam.jpg" class="img-circle" width="100%" height="100%"></a>
     </div>
   </div>
 
@@ -51,14 +51,14 @@
 
   <div class="row">
     <div class="col-sm-6">
-     <a href="" ><img src="assets/images/rawmaterial.jpg" class="img-circle"  width="100%" height="100%"></a>
+     <a href="" ><img src="assets/images/np.jpg" class="img-circle"  width="100%" height="100%"></a>
     </div>
 
     <div class="col-sm-6">
       <a href="<?php echo base_url(); ?>Welcome/history">
-        <h1 class="w3-center">ประวัติการรับประทานอาหารของคุณ</h1>
+        <h1 class="text-center">ประวัติการรับประทานอาหารของคุณ</h1>
       </a><br>
-      <h4>บันทึกและเรียกประวัติการรับประธานอาหารของคุณ</h4>  
+      <h4 class="text-center">บันทึกและเรียกประวัติการรับประธานอาหารของคุณ</h4>  
     </div>
 
   </div>

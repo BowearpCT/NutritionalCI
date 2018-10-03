@@ -33,43 +33,43 @@
       </div> -->
       <label class="control-label col-sm-2" for="nameth">ชนิดของอาหาร</label>
       <div class="radio col-sm-3">
-        <label><input type="radio" id="type" name="type" value="01" checked>ธัญพืชและผลิตภัณฑ์</label>
+        <label><input type="radio"  name="type" value="01" checked>ธัญพืชและผลิตภัณฑ์</label>
       </div>
       <div class="radio col-sm-3">
-        <label><input type="radio" id="type" name="type" value="02">รากและหัวของพืช</label>
+        <label><input type="radio"  name="type" value="02">รากและหัวของพืช</label>
       </div>
       <div class="radio  col-sm-3">
-        <label><input type="radio" id="type" name="type" value="03">ผลไม้เปลือกแข็ง พืชเมล็ด</label>
+        <label><input type="radio"  name="type" value="03">ผลไม้เปลือกแข็ง พืชเมล็ด</label>
       </div>
       <div class="radio col-sm-offset-2 col-sm-3">
-        <label><input type="radio" id="type" name="type" value="04">ผัก</label>
+        <label><input type="radio"  name="type" value="04">ผัก</label>
       </div>
       <div class="radio col-sm-3">
-        <label><input type="radio" id="type" name="type" value="05">ผลไม้</label>
+        <label><input type="radio"  name="type" value="05">ผลไม้</label>
       </div>
       <div class="radio col-sm-3">
-        <label><input type="radio" id="type" name="type" value="06">เนื้อสัตว์</label>
+        <label><input type="radio"  name="type" value="06">เนื้อสัตว์</label>
       </div>
       <div class="radio col-sm-offset-2 col-sm-3">
-        <label><input type="radio" id="type" name="type" value="07">สัตว์น้ำ</label>
+        <label><input type="radio"  name="type" value="07">สัตว์น้ำ</label>
       </div>
       <div class="radio col-sm-3">
-        <label><input type="radio" id="type" name="type" value="08">ไข่</label>
+        <label><input type="radio"  name="type" value="08">ไข่</label>
       </div>
       <div class="radio col-sm-3">
-        <label><input type="radio" id="type" name="type" value="09">นม</label>
+        <label><input type="radio"  name="type" value="09">นม</label>
       </div>
       <div class="radio col-sm-offset-2 col-sm-3">
-        <label><input type="radio" id="type" name="type" value="10">เครื่องเทสเครื่องปรุง</label>
+        <label><input type="radio"  name="type" value="10">เครื่องเทสเครื่องปรุง</label>
       </div>
       <div class="radio col-sm-3">
-        <label><input type="radio" id="type" name="type" value="11">อาหารปรุงสำเร็จอาหารจานเดียว</label>
+        <label><input type="radio"  name="type" value="11">อาหารปรุงสำเร็จอาหารจานเดียว</label>
       </div>
       <div class="radio col-sm-3">
-        <label><input type="radio" id="type" name="type" value="12">ขนมหวาน</label>
+        <label><input type="radio"  name="type" value="12">ขนมหวาน</label>
       </div>
       <div class="radio col-sm-offset-2 col-sm-3">
-        <label><input type="radio" id="type" name="type" value="13">อื่นๆ</label>
+        <label><input type="radio"  name="type" value="13">อื่นๆ</label>
       </div>
     </div> 
     <!-- ชนิด -->
@@ -174,7 +174,7 @@
                 var formdata = {
                     "thname" : $("#thname").val(),
                     "enname" : $("#enname").val(),
-                    "type" : $("#type").val(),
+                    "type" : $("input[name='type']:checked").val(),
                     "composition" :{
                         "energy" : $("#energy").val(),
                         "water" : $("#water").val(),
