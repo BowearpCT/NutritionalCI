@@ -41,5 +41,11 @@ class Welcome extends CI_Controller {
 		$this->load->view('history');
 		$this->load->view('footer');
 	}
+	public function insert_type(){
+		$this->load->view('header');
+		$this->load->view('nav');
+		$this->load->view('insert_type');
+		$this->load->view('footer');
+	}
 	
 }
