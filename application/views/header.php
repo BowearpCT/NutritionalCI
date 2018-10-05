@@ -24,9 +24,11 @@
       font: 20px Montserrat, sans-serif;
       line-height: 1.8;
       color: #808080;
-      /* background: url(https://cdn.pixabay.com/photo/2016/11/28/23/41/fruits-1866321_960_720.jpg); */
+      /* background-color : #e6ecff; */
+
+      /* background: url(assets/images/bodybg.jpg); */
       /* https://res.cloudinary.com/freshket/image/upload/f_auto,q_auto/v1484028163/h2/supplier-freshket-background.jpg */
-      background-size: cover;
+      /* background-size: cover; */
   }
   h1 {
     color: #696969;
