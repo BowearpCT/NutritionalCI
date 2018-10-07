@@ -35,10 +35,10 @@ class Welcome extends CI_Controller {
 		$this->load->view('insert_master');
 		$this->load->view('footer');
 	}
-	public function history(){
+	public function calculate(){
 		$this->load->view('header');
 		$this->load->view('nav');
-		$this->load->view('history');
+		$this->load->view('cal_nutritional');
 		$this->load->view('footer');
 	}
 	public function insert_type(){

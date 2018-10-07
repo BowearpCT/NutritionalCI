@@ -21,11 +21,11 @@
 
   <div class="row" >
     <div class="col-sm-6">
-     <a href=""><img src="assets/images/all.jpg" class="img-circle"  width="100%" height="100%"></a>
+     <a href="<?php base_url()?> Welcome/search/"><img src="assets/images/all.jpg" class="img-circle"  width="100%" height="100%"></a>
     </div>
 
     <div class="col-sm-6">
-      <a href=""><h1 class="text-center">ค้นหาอาหาร</h1></a><br>
+      <a href="<?php base_url()?> Welcome/search/"><h1 class="text-center">ค้นหาอาหาร</h1></a><br>
       <h4 class="text-center">ข้อมูลของอาหารไทยปรุงรสสำเร็จและอาหารจานเดี่ยว</h5>
       
       
