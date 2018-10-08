@@ -47,5 +47,14 @@ class Welcome extends CI_Controller {
 		$this->load->view('insert_type');
 		$this->load->view('footer');
 	}
+
+	public function cal_nutrition(){
+		$this->load->view('header');
+		$this->load->view('nav');
+		$this->load->view('cal_nutrition/content');
+		$this->load->view('cal_nutrition/script');
+		$this->load->view('footer');
+		
+	}
 	
 }

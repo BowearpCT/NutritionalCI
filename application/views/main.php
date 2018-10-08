@@ -37,7 +37,7 @@
   
   <div class="row">
     <div class="col-sm-6">
-      <a href=""><h1 class="text-center">สารอาหารในเมนูของคุณ</h1></a><br>
+      <a href="<?php echo base_url(); ?>Welcome/cal_nutrition"><h1 class="text-center">สารอาหารในเมนูของคุณ</h1></a><br>
       <h4 class="text-center">คำนวนสารอาหารที่ได้ในสูตรเมนูของคุณ หรือเมนูที่คุณคิดค้นขึ้นเอง</h4>
       
     </div>
