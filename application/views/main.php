@@ -25,7 +25,7 @@
     </div>
 
     <div class="col-sm-6">
-      <a href="<?php base_url()?> Welcome/search/"><h1 class="text-center">ค้นหาอาหาร</h1></a><br>
+      <a href="<?php echo base_url(); ?>Welcome/search"><h1 class="text-center">ค้นหาอาหาร</h1></a><br>
       <h4 class="text-center">ข้อมูลของอาหารไทยปรุงรสสำเร็จและอาหารจานเดี่ยว</h5>
       
       

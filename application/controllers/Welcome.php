@@ -57,4 +57,12 @@ class Welcome extends CI_Controller {
 		
 	}
 	
+	public function search(){
+		$this->load->view('header');
+		$this->load->view('nav');
+		$this->load->view('search');
+		// $this->load->view('cal_nutrition/script');
+		$this->load->view('footer');
+		
+	}
 }
