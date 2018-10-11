@@ -1,4 +1,5 @@
-    <br><br>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<br>
 <div class="bg-search">
   <div class="container">
     <div class="row">
@@ -6,133 +7,144 @@
       <h2 class="text-center">คำนวนสารอาหารที่ได้ในสูตรเมนูของคุณ หรือเมนูที่คุณคิดค้นขึ้นเอง</h2>
     </div>
     <div class="row">
-     <div class="card-tools one">
-
       <form id="form-calculat">
-        <div class="centercheckbox">
-          <div class="card-body black bg-light">
-            <!-- <div class="row">
-              <div class="col-sm-offset-0 col-sm-3" >
-                <div class="form-group">
-                  <label for="thname"><div>ชนิดของอาหาร</div></label>
-                  <input type="text" class="form-control" id="thname" name="thname" placeholder="ชื่อไทยหรือชื่ออังกฤษ">
-                </div>
-              </div>
-            </div> -->
-            <H3><center>บอกส่วนประกอบของอาหาร</center></H3><br>
-            <q>คำอธิบาย : หากใส่ส่วนผสมในช่อง มากกว่า 1 อย่าง ให้คั่นด้วย , ต.ย. กุ้ง, ปลาหมึก</q>
+        <br><q>คำอธิบาย : หากใส่ส่วนผสมในช่อง มากกว่า 1 อย่าง ให้คั่นด้วย , ต.ย. กุ้ง, ปลาหมึก</q><br>
+          <H3><center>บอกชนิดของส่วนประกอบของอาหาร</center></H3><br>
+          <div class="container">
+            <div class="row justify-content-md-center">
+              <table style="border-left-style:dotted; border-left-width:1px">
+                <div class="col-sm-3" style="background-color:lavender;">
+                  <label>ธัญพืชและผลิตภัณฑ์</label>
+                    <input type="text" class="form-control" id="products"  placeholder="ธัญพืช" style="color: #0000FF" >
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavenderblush;">
+                  <label>ปริมาณ</label>                
+                    <input type="text" class="form-control" id="volume1cal"  placeholder="กรัม">
+                  </div>
+                  
+                  <div class="col-sm-3" style="background-color:lavender;">
+                  <label>รากและหัวของพืช</label>
+                    <input type="text" class="form-control" id="plants"  placeholder="รากและหัวของพืช">
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavenderblush;">
+                  <label>ปริมาณ</label>                
+                    <input type="text" class="form-control" id="volume2cal"  placeholder="กรัม">  
+                  </div>
+              </table>
 
-            <div class="row">
-            
-              <div class="col-sm-offset-0 col-md-2">
-                <label>ธัญพืช</label>
-                <input type="text" class="form-control" id="name1" name="name1" placeholder="ธัญพืช" style="color: #0000FF" >                     
-                <label>ปริมาณ</label>                
-                <input type="text" class="form-control" id="name2" name="name2" placeholder="กรัม"> 
-              </div>
-              <div class="col-sm-offset-1 col-md-2">
-                <div class="form-group">
-                <label>รากและหัวของพืช</label>
-                <input type="text" class="form-control" id="name2" name="name2" placeholder="รากและหัวของพืช"> 
-                <label>ปริมาณ</label>                
-                <input type="text" class="form-control" id="name2" name="name2" placeholder="กรัม">     
-                </div>
-              </div>
-              <div class="col-sm-offset-1 col-md-2">
-                <div class="form-group">
-                <label>ผลไม้เปลือกแข็ง</label>
-                <input type="text" class="form-control" id="name3" name="name3" placeholder="ผลไม้เปลือกแข็ง">                
-                <label>ปริมาณ</label>                
-                <input type="text" class="form-control" id="name3" name="name3" placeholder="กรัม">   
-              </div>
-              </div>  
-              <div class="col-sm-offset-1 col-md-2">
-                <div class="form-group">
-                <label>ผัก</label>
-                <input type="text" class="form-control" id="name4" name="name4" placeholder="ผัก">                        
-                <label>ปริมาณ</label>                
-                <input type="text" class="form-control" id="name4" name="name4" placeholder="กรัม">   
-              </div>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-sm-offset-0 col-md-2">
-                <div class="form-group">
+              <table style="border-left-style:dotted; border-left-width:1px">
+                <div class="col-sm-3" style="background-color:lavender;">
+                  <label>ผลไม้เปลือกแข็ง พืชเมล็ด</label>
+                    <input type="text" class="form-control" id="seedlings"  placeholder="ผลไม้เปลือกแข็ง">
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavenderblush;">
+                  <label>ปริมาณ</label>                
+                    <input type="text" class="form-control" id="volume3cal"  placeholder="กรัม">  
+                  </div>
+                  
+                  <div class="col-sm-3" style="background-color:lavender;">
+                  <label>ผัก</label>
+                    <input type="text" class="form-control" id="vegetable"  placeholder="ผัก"> 
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavenderblush;">
+                  <label>ปริมาณ</label> 
+                    <input type="text" class="form-control" id="volume4cal"  placeholder="กรัม"> 
+                  </div>
+              </table>
+
+              <table style="border-left-style:dotted; border-left-width:1px">
+                <div class="col-sm-3" style="background-color:lavender;">
                   <label>ผลไม้</label>
-                  <input type="text" class="form-control" id="name5" name="name5" placeholder="ผลไม้">                        
+                    <input type="text" class="form-control" id="fruit"  placeholder="ผลไม้">
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavenderblush;">
                   <label>ปริมาณ</label>                
-                <input type="text" class="form-control" id="name5" name="name5" placeholder="กรัม"> 
-                </div>
-              </div>
-              <div class="col-sm-offset-1 col-md-2">
-                <div class="form-group">
-                <label>เนื้อสัตว์</label>
-                <input type="text" class="form-control" id="name6" name="name6" placeholder="เนื้อสัตว์">                
-                <label>ปริมาณ</label>                
-                <input type="text" class="form-control" id="name6" name="name6" placeholder="กรัม"> 
-                </div>
-              </div>  
-              <div class="col-sm-offset-1 col-md-2">
-                <div class="form-group">
-                <label>สัตว์น้ำ</label>
-                <input type="text" class="form-control" id="name7" name="name7" placeholder="สัตว์น้ำ">                        
-                <label>ปริมาณ</label>                
-                <input type="text" class="form-control" id="name7" name="name7" placeholder="กรัม"> </div>
-              </div>
-              <div class="col-sm-offset-1 col-md-2">
-                <div class="form-group">
-                <label>ไข่</label>
-                <input type="text" class="form-control" id="name8" name="name8" placeholder="ไข่">                        
-                <label>ปริมาณ</label>                
-                <input type="text" class="form-control" id="name8" name="name8" placeholder="กรัม"> </div>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-sm-offset-0 col-md-2">
-                <div class="form-group">
+                    <input type="text" class="form-control" id="volume5cal"  placeholder="กรัม">
+                  </div>
+                  
+                  <div class="col-sm-3" style="background-color:lavender;">
+                  <label>เนื้อสัตว์</label>
+                    <input type="text" class="form-control" id="meat" placeholder="เนื้อสัตว์"> 
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavenderblush;">
+                  <label>ปริมาณ</label> 
+                    <input type="text" class="form-control" id="volume6cal" placeholder="กรัม"> 
+                  </div>
+              </table>
+              
+              <table style="border-left-style:dotted; border-left-width:1px">
+                <div class="col-sm-3" style="background-color:lavender;">
+                  <label>สัตว์น้ำ</label>
+                    <input type="text" class="form-control" id="aquatic" placeholder="สัตว์น้ำ">
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavenderblush;">
+                  <label>ปริมาณ</label>                
+                    <input type="text" class="form-control" id="volume7cal"  placeholder="กรัม">
+                  </div>
+                  
+                  <div class="col-sm-3" style="background-color:lavender;">
+                  <label>ไข่</label>
+                    <input type="text" class="form-control" id="egg"  placeholder="ไข่"> 
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavenderblush;">
+                  <label>ปริมาณ</label> 
+                    <input type="text" class="form-control" id="volume8cal"  placeholder="กรัม"> 
+                  </div>
+              </table>
+
+              <table style="border-left-style:dotted; border-left-width:1px">
+                <div class="col-sm-3" style="background-color:lavender;">
+                  <label>นม</label>
+                    <input type="text" class="form-control" id="milk"  placeholder="นม">
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavenderblush;">
+                  <label>ปริมาณ</label>                
+                    <input type="text" class="form-control" id="volume9cal"  placeholder="มิลลิลิตร">
+                  </div>
+                  
+                  <div class="col-sm-3" style="background-color:lavender;">
                   <label>เครื่องเทสเครื่องปรุง1</label>
-                  <input type="text" class="form-control" id="name9" name="name9" placeholder="เครื่องเทสเครื่องปรุง1">                        
+                    <input type="text" class="form-control" id="seasoningmachine1" placeholder="เครื่องเทสเครื่องปรุง1"> 
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavenderblush;">
+                  <label>ปริมาณ</label> 
+                    <input type="text" class="form-control" id="volume10cal" placeholder="กรัม"> 
+                  </div>
+              </table>
+
+              <table style="border-left-style:dotted; border-left-width:1px">
+                <div class="col-sm-3" style="background-color:lavender;">
+                  <label>เครื่องเทสเครื่องปรุง2</label>
+                    <input type="text" class="form-control" id="seasoningmachine2"  placeholder="เครื่องเทสเครื่องปรุง2">
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavenderblush;">
                   <label>ปริมาณ</label>                
-                <input type="text" class="form-control" id="name9" name="name9" placeholder="กรัม"> </div>
-              </div>
-              <div class="col-sm-offset-1 col-md-2">
-                <div class="form-group">
-                <label>เครื่องเทสเครื่องปรุง2</label>
-                <input type="text" class="form-control" id="name10" name="name10" placeholder="เครื่องเทสเครื่องปรุง2">                       
-                <label>ปริมาณ</label>                
-                <input type="text" class="form-control" id="name10" name="name10" placeholder="กรัม"> </div>
-              </div>
-              <div class="col-sm-offset-1 col-md-2">
-                <div class="form-group">
-                <label>เครื่องเทสเครื่องปรุง3</label>
-                <input type="text" class="form-control" id="name11" name="name11" placeholder="เครื่องเทสเครื่องปรุง3">                        
-                <label>ปริมาณ</label>                
-                <input type="text" class="form-control" id="name11" name="name11" placeholder="กรัม"> </div>
-              </div>
-              <div class="col-sm-offset-1 col-md-2">
-                <div class="form-group">
-                  <label>เครื่องเทสเครื่องปรุง4</label>
-                  <input type="text" class="form-control" id="name12" name="name12" placeholder="เครื่องเทสเครื่องปรุง">                        
-                  <label>ปริมาณ</label>                
-                <input type="text" class="form-control" id="name12" name="name12" placeholder="กรัม"> </div>
-              </div>
+                  <input type="text" class="form-control" id="volume11cal"  placeholder="กรัม">
+                  </div>
+                  
+                  <div class="col-sm-3" style="background-color:lavender;">
+                  <label>เครื่องเทสเครื่องปรุง3</label>
+                    <input type="text" class="form-control" id="seasoningmachine3"  placeholder="เครื่องเทสเครื่องปรุง3"> 
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavenderblush;">
+                  <label>ปริมาณ</label> 
+                    <input type="text" class="form-control" id="volume12cal"  placeholder="กรัม"> 
+                  </div>
+              </table>
             </div>
-                <div class="form-group">
-                <button type="submit" id="btn-calculat" class="btn btn-primary">ส่ง</button>
-            </div>
+              <div class="form-group"><br>
+                <button type="submit" id="search" class="btn btn-primary">ส่ง</button>
+              </div>
           </div>
-        </div>
       </form>
     </div>
   </div>
 </div>
-<div>
+
 
 
 <br><br>
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="">
       <table class="table table-bordered" id="brand-table">
@@ -170,7 +182,7 @@
     </div>
   </div>
 </div>
-</div>
+</div> -->
 
 
 
