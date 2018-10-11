@@ -1,7 +1,7 @@
 <script>
     $(document).ready(function(){
         
-        $("#form").submit(function(e){
+        $("#form-calculat").submit(function(e){
                 e.preventDefault();
                 // var formdata = $(this).serializeObject();
                 // console.log(formdata);

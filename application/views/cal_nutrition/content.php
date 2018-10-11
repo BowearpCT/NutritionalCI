@@ -21,93 +21,139 @@
       <h2 class="text-center">คำนวนสารอาหารที่ได้ในสูตรเมนูของคุณ หรือเมนูที่คุณคิดค้นขึ้นเอง</h2>
     </div>
     <div class="row">
-      <form id="form">
+
+     <div class="card-tools one">
+      <form id="form-calculat">
         <div class="centercheckbox">
           <div class="card-body black bg-light">
             <div class="row">
-              <div class="col-sm-offset-0 col-sm-12" >
+              <div class="col-sm-offset-0 col-sm-3" >
                 <div class="form-group">
                   <label for="thname"><div>ชนิดของอาหาร</div></label>
                   <input type="text" class="form-control" id="thname" name="thname" placeholder="ชื่อไทยหรือชื่ออังกฤษ">
                 </div>
               </div>
             </div>
+            <H3><center>บอกส่วนประกอบของอาหาร</center></H3><br>
+            <q>คำอธิบาย : หากใส่ส่วนผสมในช่อง มากกว่า 1 อย่าง ให้คั่นด้วย , ต.ย. กุ้ง, ปลาหมึก</q>
+
+<!-- <div class="row"><br><br>
+  <label>ธัญพืช      กรัม</label><br>
+  <input class="col-sm-offset-0 col-md-2" type= “text" name= “fullname" id= “fullname" /> : กรัม 
+  <label>ธัญพืช</label><br>
+  <input class="col-sm-offset-1 col-md-2" type= “text" name= “fullname" id= “fullname" /> : กรัม 
+  <label>ธัญพืช</label><br>
+  <input class="col-sm-offset-1 col-md-2" type= “text" name= “fullname" id= “fullname" /> : กรัม 
+  <label>รากและหัวของพืช</label><br>
+  <input class="col-sm-offset-1 col-md-2" type= “text" name= “fullname" id= “fullname" /> : กรัม 
+  </div> -->
+  <!-- <br>
+  <div class="col-sm-offset-0 col-md-2">
+  <input class="form-control" type="text" name="Cereal" id="Cereal" value="Mickey">   กรัม <br>
+  <input class="form-control" type="text" name="Roots" id="Roots" value="Mouse">  กรัม <br>
+  <input class="form-control" type="text" name="fruitHardshell" id="fruitHardshell" value="Mickey">  กรัม <br>
+  <input class="form-control" type="text" name="Vegetable" id="Vegetable" value="Mouse">  กรัม <br>
+  <input class="form-control" type="text" name="FirstName" id="Cereal" value="Mickey">  กรัม <br>
+  <input class="form-control" type="text" name="LastName" id="Cereal" value="Mouse">  กรัม <br>
+  </div> -->
+
+
+
             <div class="row">
-              <div class="col-sm-offset-0 col-md-3">
-                <div class="form-group">
+            
+              <div class="col-sm-offset-0 col-md-2">
                 <label>ธัญพืช</label>
-                <input type="text" class="form-control" id="name1" name="name1" placeholder="ธัญพืช">                        
-                </div>
+                <input type="text" class="form-control" id="name1" name="name1" placeholder="ธัญพืช" style="color: #0000FF" >                     
+                <label>ปริมาณ</label>                
+                <input type="text" class="form-control" id="name2" name="name2" placeholder="กรัม"> 
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-offset-1 col-md-2">
                 <div class="form-group">
                 <label>รากและหัวของพืช</label>
-                <input type="text" class="form-control" id="name2" name="name2" placeholder="รากและหัวของพืช">                       
+                <input type="text" class="form-control" id="name2" name="name2" placeholder="รากและหัวของพืช"> 
+                <label>ปริมาณ</label>                
+                <input type="text" class="form-control" id="name2" name="name2" placeholder="กรัม">     
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-offset-1 col-md-2">
                 <div class="form-group">
                 <label>ผลไม้เปลือกแข็ง</label>
                 <input type="text" class="form-control" id="name3" name="name3" placeholder="ผลไม้เปลือกแข็ง">                
-                </div>
+                <label>ปริมาณ</label>                
+                <input type="text" class="form-control" id="name2" name="name2" placeholder="กรัม">   
+              </div>
               </div>  
-              <div class="col-md-3">
+              <div class="col-sm-offset-1 col-md-2">
                 <div class="form-group">
                 <label>ผัก</label>
                 <input type="text" class="form-control" id="name4" name="name4" placeholder="ผัก">                        
-                </div>
+                <label>ปริมาณ</label>                
+                <input type="text" class="form-control" id="name2" name="name2" placeholder="กรัม">   
+              </div>
               </div>
             </div>
+            <br>
             <div class="row">
-              <div class="col-sm-offset-0 col-md-3">
+              <div class="col-sm-offset-0 col-md-2">
                 <div class="form-group">
                   <label>ผลไม้</label>
                   <input type="text" class="form-control" id="name5" name="name5" placeholder="ผลไม้">                        
+                  <label>ปริมาณ</label>                
+                <input type="text" class="form-control" id="name2" name="name2" placeholder="กรัม"> 
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-offset-1 col-md-2">
                 <div class="form-group">
                 <label>เนื้อสัตว์</label>
                 <input type="text" class="form-control" id="name6" name="name6" placeholder="เนื้อสัตว์">                
+                <label>ปริมาณ</label>                
+                <input type="text" class="form-control" id="name2" name="name2" placeholder="กรัม"> 
                 </div>
               </div>  
-              <div class="col-md-3">
+              <div class="col-sm-offset-1 col-md-2">
                 <div class="form-group">
                 <label>สัตว์น้ำ</label>
                 <input type="text" class="form-control" id="name7" name="name7" placeholder="สัตว์น้ำ">                        
-                </div>
+                <label>ปริมาณ</label>                
+                <input type="text" class="form-control" id="name2" name="name2" placeholder="กรัม"> </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-offset-1 col-md-2">
                 <div class="form-group">
                 <label>ไข่</label>
                 <input type="text" class="form-control" id="name8" name="name8" placeholder="ไข่">                        
-                </div>
+                <label>ปริมาณ</label>                
+                <input type="text" class="form-control" id="name2" name="name2" placeholder="กรัม"> </div>
               </div>
             </div>
+            <br>
             <div class="row">
-              <div class="col-sm-offset-0 col-md-3">
+              <div class="col-sm-offset-0 col-md-2">
                 <div class="form-group">
                   <label>เครื่องเทสเครื่องปรุง1</label>
                   <input type="text" class="form-control" id="name9" name="name9" placeholder="เครื่องเทสเครื่องปรุง1">                        
-                </div>
+                  <label>ปริมาณ</label>                
+                <input type="text" class="form-control" id="name2" name="name2" placeholder="กรัม"> </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-offset-1 col-md-2">
                 <div class="form-group">
                 <label>เครื่องเทสเครื่องปรุง2</label>
                 <input type="text" class="form-control" id="name10" name="name10" placeholder="เครื่องเทสเครื่องปรุง2">                       
-                </div>
+                <label>ปริมาณ</label>                
+                <input type="text" class="form-control" id="name2" name="name2" placeholder="กรัม"> </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-offset-1 col-md-2">
                 <div class="form-group">
                 <label>เครื่องเทสเครื่องปรุง3</label>
                 <input type="text" class="form-control" id="name11" name="name11" placeholder="เครื่องเทสเครื่องปรุง3">                        
-                </div>
+                <label>ปริมาณ</label>                
+                <input type="text" class="form-control" id="name2" name="name2" placeholder="กรัม"> </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-sm-offset-1 col-md-2">
                 <div class="form-group">
                   <label>เครื่องเทสเครื่องปรุง4</label>
                   <input type="text" class="form-control" id="name12" name="name12" placeholder="เครื่องเทสเครื่องปรุง">                        
-                </div>
+                  <label>ปริมาณ</label>                
+                <input type="text" class="form-control" id="name2" name="name2" placeholder="กรัม"> </div>
               </div>
             </div>
                 <div class="form-group">
@@ -119,14 +165,14 @@
     </div>
   </div>
 </div>
-
+<div>
 
 
 <br><br>
 <div class="container">
   <div class="row">
     <div class="">
-      <table class="table table-bordered">
+      <table class="table table-bordered" id="brand-table">
         <thead>
           <tr>
             <th scope="col" colspan="2"><center>ชื่อ</center></th>
@@ -150,22 +196,13 @@
             <th scope="col" colspan="3"><center>มิลลิกรัม</center> </th>
           </tr>
         </thead>
+        
+        
+        <p id="tbody"></p>
         <tbody>
-          <tr>
-            <td scope="col"><center></td>
-            <td scope="col"><center>rice cooked with chicken</td>
-            <td scope="col"><center>158</td>
-            <td scope="col"><center>63.4</td>
-            <td scope="col"><center>5.1</td>
-            <td scope="col"><center>3.3</td>
-            <td scope="col"><center>26.9</td>
-            <td scope="col"><center>(0.2)</td>
-            <td scope="col"><center>1.3</td>
-            <td scope="col"><center>282</td>
-            <td scope="col"><center>69</td>
-            <td scope="col"><center>-</td>
-          </tr>
+       
         </tbody>
+
       </table>
     </div>
   </div>
