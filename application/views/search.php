@@ -15,8 +15,10 @@
         </center>
         </th>
 </table>
+<div class="container-fluid  ">
 <table class="table table-bordered" id="result">
 </table>
+</div>
 
 <script>
     $(document).ready(function(){

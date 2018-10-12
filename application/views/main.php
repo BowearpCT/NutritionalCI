@@ -43,7 +43,7 @@
     </div>
     
     <div class="col-sm-6">
-      <a href="" ><img  src="assets/images/tomyam.jpg" class="img-circle" width="100%" height="100%"></a>
+      <a href="<?php echo base_url(); ?>Welcome/cal_nutrition" ><img  src="assets/images/tomyam.jpg" class="img-circle" width="100%" height="100%"></a>
     </div>
   </div>
 
