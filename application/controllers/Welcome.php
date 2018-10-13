@@ -22,6 +22,14 @@ class Welcome extends CI_Controller {
 		parent::__construct();
 		$this->load->helper('url');
 	}
+	// public function delete($id){
+	// 	$data['id'] = $id;
+	// 	$this->load->view('header');
+	// 	$this->load->view('nav');
+	// 	$this->load->view('delete');
+	// 	$this->load->view('footer');
+	// }
+
 	
 	public function index(){
 		$this->load->view('header');
@@ -33,6 +41,43 @@ class Welcome extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('nav');
 		$this->load->view('insert_master');
+		$this->load->view('footer');
+	}
+	public function master(){
+		$this->load->view('header');
+		$this->load->view('nav');
+		$this->load->view('master');
+		$this->load->view('footer');
+	}
+	public function update($id,$thname,$enname,$type,$energy,$water,$protein,$fat,$carbohydrate,$fiber,$ash,$calsium,$phosphorus,$iron,$retinol,$betacarotene,$vitaminA,$vitaminE,$thiamin,$riboflavin,$niacin,$vitaminC){
+	// $data ['id'] = $id;
+		$data = array(
+			'id' => $id,
+			'thname' => urldecode($thname),
+			'enname' => urldecode($enname),
+			'type' => $type,
+			'energy' => $energy,
+			'water' => $water,
+			'protein' => $protein,
+			'fat' => $fat,
+			'carbohydrate' => $carbohydrate,
+			'fiber' => $fiber,
+			'ash' => $ash,
+			'calsium' => $calsium,
+			'phosphorus' => $phosphorus,
+			'iron' => $iron,
+			'retinol' => $retinol,
+			'betacarotene' => $betacarotene,
+			'vitaminA' => $vitaminA,
+			'vitaminE' => $vitaminE,
+			'thiamin' => $thiamin,
+			'riboflavin' => $riboflavin,
+			'niacin' => $niacin,
+			'vitaminC' => $vitaminC
+		);
+		$this->load->view('header');
+		$this->load->view('nav');
+		$this->load->view('update',$data);
 		$this->load->view('footer');
 	}
 	public function calculate(){

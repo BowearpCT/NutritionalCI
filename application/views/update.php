@@ -1,15 +1,10 @@
-
-
-
-<!-- Header -->
-
-
-<!-- Page content -->
 <div class="container-fluid">
   <div class="row">
-    <h1 class="text-center">ฟอร์มกรอกข้อมูล</h1>
+    <h1 class="text-center">ฟอร์มแก้ไขข้อมูล</h1>
   </div>
 </div>
+
+
 <div class="container">
   
   <form class="form-horizontal" id="insert">
@@ -20,26 +15,57 @@
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="nameth">ชื่ออาหารหรือวัตถุดิบ</label>
-      <div class="col-sm-4">
-        <input type="text" class="form-control" name="thname" id="thname" placeholder="ชื่อภาษาไทย">
+      <div class="col-sm-4" id="input_thname">
+        <input type="text" class="form-control" name="thname" id="thname" value="<?php echo $thname?>">
       </div>
-      <div class="col-sm-4">          
-        <input type="text" class="form-control" name="enname" id="enname" placeholder="ชื่อภาษาอังกฤษ">
+      <div class="col-sm-4" id="input_enname">          
+        <input type="text" class="form-control" name="enname" id="enname" value="<?php echo $enname?>">
       </div>
     </div>
-    <!-- ชื่อ --> 
+    <!-- ชื่อ  -->
     <hr>
     <!-- ชนิด -->
     <div class="form-group" >
       <!-- <label class="control-label col-sm-2" for="nameth">ชนิดของอาหาร</label>
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="type" name="type" placeholder="พลังงาน">
+        <input type="text" class="form-control" id="type" name="type" value="พลังงาน">
       </div> -->
       <label class="control-label col-sm-2" for="nameth">ชนิดของอาหาร</label>
-      <div class="radio col-sm-3">
-        <label><input type="radio"  name="type" value="01" checked>ธัญพืชและผลิตภัณฑ์</label>
-      </div>
-      <div class="radio col-sm-3">
+      <?php
+        $zero = "0";
+        $name_type = array(
+          "","ธัญพืชและผลิตภัณฑ์","รากและหัวของพืช","ผลไม้เปลือกแข็ง พืชเมล็ด","ผัก","ผลไม้"
+          ,"เนื้อสัตว์","สัตว์น้ำ","ไข่","นม","เครื่องเทสเครื่องปรุง","อาหารปรุงสำเร็จอาหารจานเดียว","ขนมหวาน","อื่นๆ"
+        );
+        $num = 1;
+        for ($i=1;$i<=13;$i++) {
+           $number = ($i<10)?$zero.$i:$i;
+           $equal = strcmp($number,$type);
+           if ($num<=3){
+              $num ++;
+           ?>
+          
+                    <div class="radio  col-sm-3">
+                      <label><input class="col-sm-2" type="radio"  name="type" value="<?php echo $number?>" <?php echo ($equal==0)?"checked":"";?>>
+                        <?php echo $name_type[$i]?>
+                      </label>
+                    </div>
+           <?php }
+           else{
+              $num =2; 
+            ?>
+                    <div class="radio col-sm-offset-2 col-sm-3">
+                      <label><input class="col-sm-2" type="radio"  name="type" value="<?php echo $number?>" <?php echo ($equal==0)?"checked":"";?>>
+                        <?php echo $name_type[$i]?>
+                      </label>
+                    </div>
+              
+           
+                    
+
+      
+        <?php }}?>
+      <!-- <div class="radio col-sm-3">
         <label><input type="radio"  name="type" value="02">รากและหัวของพืช</label>
       </div>
       <div class="radio  col-sm-3">
@@ -74,36 +100,50 @@
       </div>
       <div class="radio col-sm-offset-2 col-sm-3">
         <label><input type="radio"  name="type" value="13">อื่นๆ</label>
-      </div>
+      </div> -->
     </div> 
     <!-- ชนิด -->
     <hr>
     <!-- ส่วนประกอบหลัก -->
     <div class="form-group">
+    <div class="row">
+          <p class="col-sm-offset-2 col-sm-2"> พลังงาน</p>
+          <p class="col-sm-2">น้ำ</p>
+          <p class="col-sm-2">โปรตีน</p>
+          <p class="col-sm-2">ไขมัน</p>
+    </div>
     <label class="control-label col-sm-2" for="nameth">ส่วนประกอบหลัก</label>
+    
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="energy" name="energy" placeholder="พลังงาน">
+        <input type="text" class="form-control" id="energy" name="energy" value="<?php echo $energy?>">
       </div>
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="water" name="water" placeholder="น้ำ">
+        <input type="text" class="form-control" id="water" name="water" value="<?php echo $water?>">
       </div>
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="protein" name="protein" placeholder="โปรตีน">
+        <input type="text" class="form-control" id="protein" name="protein" value="<?php echo $protein?>">
       </div>
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="fat" name="fat" placeholder="ไขมัน">
+        <input type="text" class="form-control" id="fat" name="fat" value="<?php echo $fat?>">
       </div>
     </div>
 
+    
+
     <div class="form-group">
+      <div class="row">
+        <p class="col-sm-offset-2 col-sm-2"> คาร์โบรไฮเดรต</p>
+        <p class="col-sm-2">ใยอาหาร</p>
+        <p class="col-sm-2">เถ้า</p>
+      </div>
       <div class="col-sm-offset-2 col-sm-2">
-        <input type="text" class="form-control" id="carbohydrate" name="carbohydrate" placeholder="คาร์โบรไฮเดรต">
+        <input type="text" class="form-control" id="carbohydrate" name="carbohydrate" value="<?php echo $carbohydrate?>">
       </div>
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="fiber" name="fiber" placeholder="ใยอาหาร">
+        <input type="text" class="form-control" id="fiber" name="fiber" value="<?php echo $fiber?>">
       </div>
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="ash" name="ash" placeholder="เถ้า">
+        <input type="text" class="form-control" id="ash" name="ash" value="<?php echo $ash?>">
       </div>
     </div>
     <!-- ส่วนประกอบหลัก -->
@@ -111,49 +151,66 @@
     
     <!-- แร่ธาตุ -->
     <div class="form-group">
+    <div class="row">
+      <p class="col-sm-offset-2 col-sm-2">แคลเซียม</p>
+      <p class="col-sm-2">ฟอสฟอรัส</p>
+      <p class="col-sm-2">เหล็ก</p>
+    </div>
     <label class="control-label col-sm-2" for="nameth">แร่ธาตุ</label>
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="calsium" name="calsium" placeholder="แคลเซียม">
+        <input type="text" class="form-control" id="calsium" name="calsium" value="<?php echo $calsium?>">
       </div>
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="phosphorus" name="phosphorus" placeholder="ฟอสฟอรัส">
+        <input type="text" class="form-control" id="phosphorus" name="phosphorus" value="<?php echo $phosphorus?>">
       </div>
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="iron" name="iron" placeholder="เหล็ก">
+        <input type="text" class="form-control" id="iron" name="iron" value="<?php echo $iron?>">
       </div>
     </div>
       <!-- แร่ธาตุ -->
       <hr>
       <!-- วิตามิน -->
     <div class="form-group">
+     <div class="row">
+          <p class="col-sm-offset-2 col-sm-2">เรตินอย</p>
+          <p class="col-sm-2">เบต้าคาโรทีน</p>
+          <p class="col-sm-2">วิตามินเอ</p>
+          <p class="col-sm-2">วิตามินอี</p>
+     </div>
       <label class="control-label col-sm-2" for="nameth">วิตามิน</label>
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="retinol" name="retinol" placeholder="เรตินอย">
+        <input type="text" class="form-control" id="retinol" name="retinol" value="<?php echo $retinol?>">
       </div>
       <div class=" col-sm-2">
-        <input type="text" class="form-control" id="betacarotene" name="betacarotene" placeholder="เบต้าคาโรทีน">
+        <input type="text" class="form-control" id="betacarotene" name="betacarotene" value="<?php echo $betacarotene?>">
       </div>
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="vitaminA" name="vitaminA" placeholder="วิตามินเอ">
+        <input type="text" class="form-control" id="vitaminA" name="vitaminA" value="<?php echo $vitaminA?>">
       </div>
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="vitaminE" name="vitaminE" placeholder="วิตามินอี">
+        <input type="text" class="form-control" id="vitaminE" name="vitaminE" value="<?php echo $vitaminE?>">
       </div>
       
     </div>
 
     <div class="form-group">
+    <div class="row">
+          <p class="col-sm-offset-2 col-sm-2">ธิเอมีน</p>
+          <p class="col-sm-2">ลิโบฟลาวิน</p>
+          <p class="col-sm-2">นิเอซิน</p>
+          <p class="col-sm-2">วิตามินซี</p>
+     </div>
       <div class="col-sm-offset-2 col-sm-2">
-        <input type="text" class="form-control" id="thiamin" name="thiamin" placeholder="ทิเอมิน">
+        <input type="text" class="form-control" id="thiamin" name="thiamin" value="<?php echo $thiamin?>">
       </div>
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="riboflavin" name="riboflavin" placeholder="ลิโบฟลาวิน">
+        <input type="text" class="form-control" id="riboflavin" name="riboflavin" value="<?php echo $riboflavin?>">
       </div>
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="niacin" name="niacin" placeholder="นิเอซิน">
+        <input type="text" class="form-control" id="niacin" name="niacin" value="<?php echo $niacin?>">
       </div>
       <div class="col-sm-2">
-        <input type="text" class="form-control" id="vitaminC" name="vitaminC" placeholder="วิตามินซี">
+        <input type="text" class="form-control" id="vitaminC" name="vitaminC" value="<?php echo $vitaminC?>">
       </div>
     </div>
       <!-- วิตามิน -->
@@ -168,6 +225,7 @@
     </div>
   </form>
 </div>
+
 <script>
     $(document).ready(function(){
         
@@ -176,6 +234,7 @@
                 // var formdata = $(this).serializeObject();
                 // console.log(formdata);
                 var formdata = {
+                    "id" : "<?php echo $id ?>",
                     "thname" : $("#thname").val(),
                     "enname" : $("#enname").val(),
                     "type" : $("input[name='type']:checked").val(),
@@ -205,7 +264,7 @@
                     }
                     
                 }
-                $.post("http://localhost:8080/Nutritional/api/master/insert", JSON.stringify(formdata),
+                $.post("http://localhost:8080/Nutritional/api/master/update", JSON.stringify(formdata),
                     function (data, textStatus, jqXHR) {
                         alert(data.message);
                     }    
@@ -213,6 +272,3 @@
             });
     });
 </script>
-
-
-
