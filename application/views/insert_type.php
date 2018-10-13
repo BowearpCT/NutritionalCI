@@ -35,7 +35,7 @@
                 // var formdata = $(this).serializeObject();
                 // console.log(formdata);
                 var formdata = {
-                    "nametype" : $("#nametype").val(), 
+                    "name" : $("#nametype").val(), 
                 }
                 $.post("http://localhost:8080/Nutritional/api/type/insert", JSON.stringify(formdata),
                     function (data, textStatus, jqXHR) {
@@ -75,34 +75,38 @@
                 $.each(listOfherb, function( index, value ) {
                     strType += '<tr>'
                             + '<td>'+i+'</td>'
+                            // + '<td>'+value._id+'</td>'
                             + '<td>'+value.name+'</td>'
                             + '<td>'
                             +'<a href="editype/'+value._id+'/'+value.nametype+'/'+value.warning+'" class="btn btn-info">'
                             + '<i class="far fa-edit"></i> Edit'
                             + '</a> &nbsp;'
-                            + '<button class="btn btn-danger" oneclick+"deleteType"(\''+value._id+'\')">'
+                            + '<button class="btn btn-danger" onclick="deleteType (\''+value._id+'\')">'
                             + '<i class="far fa-edit"></i> Delete'
-                            + '<butoon>'
+                            + '</button>'
                             + '</td>'
                             + '</tr>';
+
                             i++;            
                 });
                 type.html(strType);  
             }
         );
-    </script>
 
-<!-- dalete
-<script>
-function delete1(typeid){
+
+
+function deleteType(typeId){
   $.ajax({
     type: "delete",
-    url: "http://localhost:8080/Nutritional/api/delete/",
-    data: JSON class="stringify",
-    dataType: "dataType",
+    url: "http://localhost:8080/Nutritional/api/type/delete/",
+    data: JSON.stringify({
+      "id": typeId
+    }),
+    dataType: "json",
     success: function (response) {
+      alert(response.message);
     }
   });
 }
 
-</script> -->
+</script>
