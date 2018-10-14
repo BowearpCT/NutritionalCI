@@ -16,7 +16,7 @@
 
 <div class="row" style="margin-top:20px">
     <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-		<form role="form">
+		<form role="form" id="Flogin">
 			<fieldset>
 				<h2>Sign In</h2>
 				<hr class="colorgraph">
@@ -106,3 +106,28 @@
 	});
 });
 </script>
+<script>
+        $("#Flogin").submit(function (e) { 
+            e.preventDefault();
+            var formdata = {
+                "username": $("#username").val(),
+                "password": $("#password").val()
+            }
+            $.post("http://localhost:8080/Mhunpris/api/member/search", JSON.stringify(formdata),
+            function (data, textStatus, jqXHR) {
+                if(data.data.length == 0){
+                    alert("Username หรือ Password ไม่ถูกต้อง กรุณากรอกใหม่อีกครั้ง !!");
+                    window.location.href = "<?php echo base_url() ?>welcome/login";
+                }
+                else{
+                    var username = data.data[0].username;
+                    localStorage.setItem("usernamelocal", username);
+                    alert("เข้าสู่ระบบสำเร็จ");
+                    window.location.href = "<?php echo base_url() ?>welcome/";
+                    
+                    
+                }  
+            }
+        );
+        });
+    </script>
