@@ -124,5 +124,16 @@ class Welcome extends CI_Controller {
 		$this->load->view('footer');
 		
 	}
+	public function edit_type($_id,$name){
+		$data = array(
+			'_id'=>$_id,
+			'name'=>$name
+		);
+		
+		$this->load->view('header');
+		$this->load->view('nav');
+		$this->load->view('edittype',$data);
+		$this->load->view('footer');
+	}
 	
 }
