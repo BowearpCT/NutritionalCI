@@ -21,10 +21,10 @@
 				<h2>Sign In</h2>
 				<hr class="colorgraph">
 				<div class="form-group">
-                    <input type="text" name="username" id="username" class="form-control input-lg" placeholder="username">
+                    <input type="text" name="username" id="username" class="form-control input-lg" placeholder="username" required>
 				</div>
 				<div class="form-group">
-                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
+                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" required>
 				</div>
 				<span class="button-checkbox">
 					<button type="button" class="btn" data-color="info">Remember Me</button>
