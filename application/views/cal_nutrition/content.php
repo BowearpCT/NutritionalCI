@@ -1,151 +1,208 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<br>
-<div class="bg-search">
-  <div class="container">
-    <div class="row">
-      <h1 class="text-center">สารอาหารในเมนูของคุณ</h1>
-      <h2 class="text-center">คำนวนสารอาหารที่ได้ในสูตรเมนูของคุณ หรือเมนูที่คุณคิดค้นขึ้นเอง</h2>
-    </div>
-    <div class="row">
-      <form id="form-calculat">
+<div class="container">
+  <div class="row">
+        <h1 class="text-center">สารอาหารในเมนูของคุณ</h1>
+        <h2 class="text-center">คำนวนสารอาหารที่ได้ในสูตรเมนูของคุณ หรือเมนูที่คุณคิดค้นขึ้นเอง</h2>
+  </div>
         <br><q>คำอธิบาย : หากใส่ส่วนผสมในช่อง มากกว่า 1 อย่าง ให้คั่นด้วย , ต.ย. กุ้ง, ปลาหมึก</q><br>
-          <H3><center>บอกชนิดของส่วนประกอบของอาหาร</center></H3><br>
-          <div class="container">
-            <div class="row justify-content-md-center">
-              <table style="border-left-style:dotted; border-left-width:1px">
-                <div class="col-sm-3" style="background-color:lavender;">
-                  <label>ธัญพืชและผลิตภัณฑ์</label>
-                    <input type="text" class="form-control" id="products"  placeholder="ธัญพืช" style="color: #0000FF" >
-                  </div>
-                  <div class="col-sm-3" style="background-color:lavenderblush;">
-                  <label>ปริมาณ</label>                
-                    <input type="text" class="form-control" id="volume1cal"  placeholder="กรัม">
-                  </div>
-                  
-                  <div class="col-sm-3" style="background-color:lavender;">
-                  <label>รากและหัวของพืช</label>
-                    <input type="text" class="form-control" id="plants"  placeholder="รากและหัวของพืช">
-                  </div>
-                  <div class="col-sm-3" style="background-color:lavenderblush;">
-                  <label>ปริมาณ</label>                
-                    <input type="text" class="form-control" id="volume2cal"  placeholder="กรัม">  
-                  </div>
-              </table>
-
-              <table style="border-left-style:dotted; border-left-width:1px">
-                <div class="col-sm-3" style="background-color:lavender;">
-                  <label>ผลไม้เปลือกแข็ง พืชเมล็ด</label>
-                    <input type="text" class="form-control" id="seedlings"  placeholder="ผลไม้เปลือกแข็ง">
-                  </div>
-                  <div class="col-sm-3" style="background-color:lavenderblush;">
-                  <label>ปริมาณ</label>                
-                    <input type="text" class="form-control" id="volume3cal"  placeholder="กรัม">  
-                  </div>
-                  
-                  <div class="col-sm-3" style="background-color:lavender;">
-                  <label>ผัก</label>
-                    <input type="text" class="form-control" id="vegetable"  placeholder="ผัก"> 
-                  </div>
-                  <div class="col-sm-3" style="background-color:lavenderblush;">
-                  <label>ปริมาณ</label> 
-                    <input type="text" class="form-control" id="volume4cal"  placeholder="กรัม"> 
-                  </div>
-              </table>
-
-              <table style="border-left-style:dotted; border-left-width:1px">
-                <div class="col-sm-3" style="background-color:lavender;">
-                  <label>ผลไม้</label>
-                    <input type="text" class="form-control" id="fruit"  placeholder="ผลไม้">
-                  </div>
-                  <div class="col-sm-3" style="background-color:lavenderblush;">
-                  <label>ปริมาณ</label>                
-                    <input type="text" class="form-control" id="volume5cal"  placeholder="กรัม">
-                  </div>
-                  
-                  <div class="col-sm-3" style="background-color:lavender;">
-                  <label>เนื้อสัตว์</label>
-                    <input type="text" class="form-control" id="meat" placeholder="เนื้อสัตว์"> 
-                  </div>
-                  <div class="col-sm-3" style="background-color:lavenderblush;">
-                  <label>ปริมาณ</label> 
-                    <input type="text" class="form-control" id="volume6cal" placeholder="กรัม"> 
-                  </div>
-              </table>
-              
-              <table style="border-left-style:dotted; border-left-width:1px">
-                <div class="col-sm-3" style="background-color:lavender;">
-                  <label>สัตว์น้ำ</label>
-                    <input type="text" class="form-control" id="aquatic" placeholder="สัตว์น้ำ">
-                  </div>
-                  <div class="col-sm-3" style="background-color:lavenderblush;">
-                  <label>ปริมาณ</label>                
-                    <input type="text" class="form-control" id="volume7cal"  placeholder="กรัม">
-                  </div>
-                  
-                  <div class="col-sm-3" style="background-color:lavender;">
-                  <label>ไข่</label>
-                    <input type="text" class="form-control" id="egg"  placeholder="ไข่"> 
-                  </div>
-                  <div class="col-sm-3" style="background-color:lavenderblush;">
-                  <label>ปริมาณ</label> 
-                    <input type="text" class="form-control" id="volume8cal"  placeholder="กรัม"> 
-                  </div>
-              </table>
-
-              <table style="border-left-style:dotted; border-left-width:1px">
-                <div class="col-sm-3" style="background-color:lavender;">
-                  <label>นม</label>
-                    <input type="text" class="form-control" id="milk"  placeholder="นม">
-                  </div>
-                  <div class="col-sm-3" style="background-color:lavenderblush;">
-                  <label>ปริมาณ</label>                
-                    <input type="text" class="form-control" id="volume9cal"  placeholder="มิลลิลิตร">
-                  </div>
-                  
-                  <div class="col-sm-3" style="background-color:lavender;">
-                  <label>เครื่องเทสเครื่องปรุง1</label>
-                    <input type="text" class="form-control" id="seasoningmachine1" placeholder="เครื่องเทสเครื่องปรุง1"> 
-                  </div>
-                  <div class="col-sm-3" style="background-color:lavenderblush;">
-                  <label>ปริมาณ</label> 
-                    <input type="text" class="form-control" id="volume10cal" placeholder="กรัม"> 
-                  </div>
-              </table>
-
-              <table style="border-left-style:dotted; border-left-width:1px">
-                <div class="col-sm-3" style="background-color:lavender;">
-                  <label>เครื่องเทสเครื่องปรุง2</label>
-                    <input type="text" class="form-control" id="seasoningmachine2"  placeholder="เครื่องเทสเครื่องปรุง2">
-                  </div>
-                  <div class="col-sm-3" style="background-color:lavenderblush;">
-                  <label>ปริมาณ</label>                
-                  <input type="text" class="form-control" id="volume11cal"  placeholder="กรัม">
-                  </div>
-                  
-                  <div class="col-sm-3" style="background-color:lavender;">
-                  <label>เครื่องเทสเครื่องปรุง3</label>
-                    <input type="text" class="form-control" id="seasoningmachine3"  placeholder="เครื่องเทสเครื่องปรุง3"> 
-                  </div>
-                  <div class="col-sm-3" style="background-color:lavenderblush;">
-                  <label>ปริมาณ</label> 
-                    <input type="text" class="form-control" id="volume12cal"  placeholder="กรัม"> 
-                  </div>
-              </table>
-            </div>
-              <div class="form-group"><br>
-                <button type="submit" id="search" class="btn btn-primary">ส่ง</button>
-              </div>
-          </div>
-      </form>
-    </div>
+        <center><H3>บอกชนิดของส่วนประกอบของอาหาร</H3></center><br>
   </div>
 </div>
 
+<br>
+<br>
+<form id="form-calculat">
+  <div class="container">
+    <div class="col-md-2">
+      <button type="button" class="btn btn-primary col-md-4 btn-block ">ส่ง</button>
+    </div>
+<br>
+    <div class="row">    
+      <div class="col-sm-6"> <!-- //ช่อง1// -->
+          <div class="row">
+            <div class="col-md-6">
+            <label>ธัญพืชและผลิตภัณฑ์</label>
+              <input type="text" class="form-control" id="products"  placeholder="ธัญพืช" style="color: #0000FF" >
+            </div>
+            <div class="col-md-5">
+            <label>ปริมาณ</label>                
+              <div class="input-group">
+                <input type="text" class="form-control" id="productscal"  placeholder="กรัม">
+                  <span class="input-group-btn">
+                    <button class="btn  glyphicon glyphicon-plus" type="button" id="create_one"></button>
+                  </span>
+              </div>
+            </div>
+          </div>
+          <span id="temp_one"></span>
 
 
-<br><br>
-<!-- <div class="container">
-  <div class="row">
+          <div class="row">
+            <div class="col-md-6">
+            <label>รากและหัวของพืช</label>
+              <input type="text" class="form-control" id="plants"  placeholder="รากและหัวของพืช">
+            </div>
+            <div class="col-md-5">
+            <label>ปริมาณ</label>                
+              <div class="input-group">
+                <input type="text" class="form-control" id="plantscal"  placeholder="กรัม">  
+                  <span class="input-group-btn">
+                    <button class="btn  glyphicon glyphicon-plus" type="button" id="create_two"></button>
+                  </span>
+              </div>
+            </div>
+          </div>
+          <span id="temp_two"></span>
+
+
+          <div class="row">
+            <div class="col-md-6">
+            <label>ผลไม้เปลือกแข็ง พืชเมล็ด</label>
+              <input type="text" class="form-control" id="seedlings"  placeholder="ผลไม้เปลือกแข็ง">
+            </div>
+            <div class="col-md-5">
+            <label>ปริมาณ</label>                
+              <div class="input-group">
+                <input type="text" class="form-control" id="seedlingscal"  placeholder="กรัม">  
+                  <span class="input-group-btn">
+                    <button class="btn  glyphicon glyphicon-plus" type="button" id="create_three"></button>
+                  </span>
+              </div>
+            </div>
+          </div>
+          <span id="temp_three"></span>
+
+          <div class="row">
+            <div class="col-md-6">
+            <label>ผัก</label>
+              <input type="text" class="form-control" id="vegetable"  placeholder="ผัก"> 
+            </div>
+            <div class="col-md-5">
+            <label>ปริมาณ</label>                
+              <div class="input-group">
+                <input type="text" class="form-control" id="vegetablecal"  placeholder="กรัม"> 
+                  <span class="input-group-btn">
+                    <button class="btn  glyphicon glyphicon-plus" type="button" id="create_four"></button>
+                  </span>
+              </div>
+            </div>
+          </div>
+          <span id="temp_four"></span>
+
+          <div class="row">
+            <div class="col-md-6">
+              <label>ผลไม้</label>
+                <input type="text" class="form-control" id="fruit"  placeholder="ผลไม้">
+              </div>
+            <div class="col-md-5">
+            <label>ปริมาณ</label>                
+              <div class="input-group">
+                <input type="text" class="form-control" id="fruitcal"  placeholder="กรัม">
+                  <span class="input-group-btn">
+                    <button class="btn  glyphicon glyphicon-plus" type="button" id="create_five"></button>
+                  </span>
+              </div>
+            </div>
+          </div>
+          <span id="temp_five"></span>
+
+      </div>
+      
+      <div class="col-sm-6" ><!-- //ช่อง2// -->
+          <div class="row">
+            <div class="col-md-6">
+            <label>เนื้อสัตว์</label>
+              <input type="text" class="form-control" id="meat" placeholder="เนื้อสัตว์"> 
+            </div>
+            <div class="col-md-5">
+            <label>ปริมาณ</label>                
+              <div class="input-group">
+                <input type="text" class="form-control" id="meatcal" placeholder="กรัม"> 
+                  <span class="input-group-btn">
+                    <button class="btn  glyphicon glyphicon-plus" type="button" id="create_six"></button>
+                  </span>
+              </div>
+            </div>
+          </div>
+          <span id="temp_six"></span>
+
+          <div class="row">
+            <div class="col-md-6">
+              <label>สัตว์น้ำ</label>
+                <input type="text" class="form-control" id="aquatic" placeholder="สัตว์น้ำ">
+              </div>
+              <div class="col-md-5">
+              <label>ปริมาณ</label>                
+                <div class="input-group">
+                  <input type="text" class="form-control" id="aquaticcal"  placeholder="กรัม">
+                    <span class="input-group-btn">
+                      <button class="btn  glyphicon glyphicon-plus" type="button" id="create_seven"></button>
+                    </span>
+                </div>
+              </div>
+            </div>
+            <span id="temp_seven"></span>
+
+             <div class="row">
+              <div class="col-md-6">
+                <label>ไข่</label>
+                  <input type="text" class="form-control" id="egg" placeholder="ไข่"> 
+                </div>
+                <div class="col-md-5">
+                <label>ปริมาณ</label>                
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="eggcal" placeholder="กรัม"> 
+                      <span class="input-group-btn">
+                        <button class="btn  glyphicon glyphicon-plus" type="button" id="create_eight"></button>
+                      </span>
+                  </div>
+                </div>
+              </div>
+              <span id="temp_eight"></span>
+
+          <div class="row">
+            <div class="col-md-6">
+            <label>นม</label>
+              <input type="text" class="form-control" id="milk"  placeholder="นม">
+            </div>
+            <div class="col-md-5">
+            <label>ปริมาณ</label>                
+              <div class="input-group">
+                <input type="text" class="form-control" id="milkcal"  placeholder="มิลลิลิตร">
+                  <span class="input-group-btn">
+                    <button class="btn  glyphicon glyphicon-plus" type="button" id="create_nine"></button>
+                  </span>
+              </div>
+            </div>
+          </div>
+          <span id="temp_nine"></span>
+
+        <div class="row">
+          <div class="col-md-6">
+            <label>เครื่องเทสเครื่องปรุง</label>
+              <input type="text" class="form-control" id="seasoningmachine" placeholder="เครื่องเทสเครื่องปรุง"> 
+            </div>
+            <div class="col-md-5">
+            <label>ปริมาณ</label>                
+              <div class="input-group">
+                <input type="text" class="form-control" id="seasoningmachinecal" placeholder="กรัม"> 
+                  <span class="input-group-btn">
+                    <button class="btn  glyphicon glyphicon-plus" type="button" id="create_ten"></button>
+                  </span>
+              </div>
+            </div>
+          </div>
+          <span id="temp_ten"></span>
+
+         
+
+      </div>
+    </div>
+    
+  </div>
+</form>
+<br>
+
+<div class="row">
     <div class="">
       <table class="table table-bordered" id="brand-table">
         <thead>
@@ -181,8 +238,3 @@
       </table>
     </div>
   </div>
-</div>
-</div> -->
-
-
-
