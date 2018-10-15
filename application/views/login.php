@@ -113,7 +113,7 @@
                 "username": $("#username").val(),
                 "password": $("#password").val()
             }
-            $.post("http://localhost:8080/Mhunpris/api/member/search", JSON.stringify(formdata),
+            $.post("http://localhost:8081/Nutritional/api/user/search", JSON.stringify(formdata),
             function (data, textStatus, jqXHR) {
                 if(data.data.length == 0){
                     alert("Username หรือ Password ไม่ถูกต้อง กรุณากรอกใหม่อีกครั้ง !!");
