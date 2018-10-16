@@ -81,6 +81,12 @@
     <hr>
     <!-- ส่วนประกอบหลัก -->
     <div class="form-group">
+    <div class="row">
+          <p class="col-sm-offset-2 col-sm-2"> พลังงาน</p>
+          <p class="col-sm-2">น้ำ</p>
+          <p class="col-sm-2">โปรตีน</p>
+          <p class="col-sm-2">ไขมัน</p>
+    </div>
     <label class="control-label col-sm-2" for="nameth">ส่วนประกอบหลัก</label>
       <div class="col-sm-2">
         <input type="text" class="form-control" id="energy" name="energy" placeholder="พลังงาน">
@@ -97,6 +103,11 @@
     </div>
 
     <div class="form-group">
+      <div class="row">
+        <p class="col-sm-offset-2 col-sm-2"> คาร์โบรไฮเดรต</p>
+        <p class="col-sm-2">ใยอาหาร</p>
+        <p class="col-sm-2">เถ้า</p>
+      </div>
       <div class="col-sm-offset-2 col-sm-2">
         <input type="text" class="form-control" id="carbohydrate" name="carbohydrate" placeholder="คาร์โบรไฮเดรต">
       </div>
@@ -112,6 +123,11 @@
     
     <!-- แร่ธาตุ -->
     <div class="form-group">
+    <div class="row">
+      <p class="col-sm-offset-2 col-sm-2">แคลเซียม</p>
+      <p class="col-sm-2">ฟอสฟอรัส</p>
+      <p class="col-sm-2">เหล็ก</p>
+    </div>
     <label class="control-label col-sm-2" for="nameth">แร่ธาตุ</label>
       <div class="col-sm-2">
         <input type="text" class="form-control" id="calsium" name="calsium" placeholder="แคลเซียม">
@@ -127,6 +143,12 @@
       <hr>
       <!-- วิตามิน -->
     <div class="form-group">
+      <div class="row">
+          <p class="col-sm-offset-2 col-sm-2">เรตินอย</p>
+          <p class="col-sm-2">เบต้าคาโรทีน</p>
+          <p class="col-sm-2">วิตามินเอ</p>
+          <p class="col-sm-2">วิตามินอี</p>
+      </div>
       <label class="control-label col-sm-2" for="nameth">วิตามิน</label>
       <div class="col-sm-2">
         <input type="text" class="form-control" id="retinol" name="retinol" placeholder="เรตินอย">
@@ -144,6 +166,12 @@
     </div>
 
     <div class="form-group">
+      <div class="row">
+          <p class="col-sm-offset-2 col-sm-2">ธิเอมีน</p>
+          <p class="col-sm-2">ลิโบฟลาวิน</p>
+          <p class="col-sm-2">นิเอซิน</p>
+          <p class="col-sm-2">วิตามินซี</p>
+      </div>
       <div class="col-sm-offset-2 col-sm-2">
         <input type="text" class="form-control" id="thiamin" name="thiamin" placeholder="ทิเอมิน">
       </div>
