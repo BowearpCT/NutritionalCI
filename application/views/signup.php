@@ -11,27 +11,27 @@
                 <!-- <div class="row"> -->
                     <!-- <div class="col-xs-12 col-sm-6 col-md-6"> -->
                         <div class="form-group">
-                            <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1">
+                            <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1" required>
                         </div>
                     <!-- </div> -->
                     <!-- <div class="col-xs-12 col-sm-6 col-md-6"> -->
                         <div class="form-group">
-                            <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2">
+                            <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2" required>
                         </div>
                     <!-- </div> -->
                 <!-- </div> -->
                 <div class="form-group">
-                    <input type="text" name="username" id="username" class="form-control input-lg" placeholder="username" tabindex="3">
+                    <input type="text" name="username" id="username" class="form-control input-lg" placeholder="username" tabindex="3" required>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
-                            <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+                            <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5" required>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
-                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirm Password" tabindex="6">
+                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirm Password" tabindex="6" required>
                         </div>
                     </div>
                 </div>

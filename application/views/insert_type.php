@@ -42,6 +42,7 @@
                 $.post("http://localhost:8080/Nutritional/api/type/insert", JSON.stringify(formdata),
                     function (data, textStatus, jqXHR) {
                         alert(data.message);
+                         window.location.reload("http://localhost:81/NutritionalCI/welcome/insert_type");
                     }    
                 );
             });
@@ -80,7 +81,7 @@
                             // + '<td>'+value._id+'</td>'
                             + '<td>'+value.name+'</td>'
                             + '<td>'
-                            +'<a href="editype/'+value._id+'/'+value.nametype+'/'+value.warning+'" class="btn btn-info">'
+                            +'<a href="edit_type/'+value._id+'/'+value.name+'" class="btn btn-info">'
                             + '<i class="far fa-edit"></i> Edit'
                             + '</a> &nbsp;'
                             + '<button class="btn btn-danger" onclick="deleteType (\''+value._id+'\')">'
@@ -107,6 +108,7 @@ function deleteType(typeId){
     dataType: "json",
     success: function (response) {
       alert(response.message);
+      window.location.reload("http://localhost:81/NutritionalCI/welcome/insert_type");
     }
   });
 }
