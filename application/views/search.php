@@ -1,3 +1,7 @@
+<nav class="navbar navbar-inverse" id="navbar">
+</nav>
+
+
 <table class="table table-bordered">
 <tr class="w3-hover-#f1f1f1">
 

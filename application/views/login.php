@@ -1,17 +1,5 @@
-<head>
-    <style>
-    .colorgraph {
-  height: 5px;
-  border-top: 0;
-  background: #c4e17f;
-  border-radius: 5px;
-  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-}
-    </style>
-</head>
+<nav class="navbar navbar-inverse" id="navbar">
+</nav>
 <div class="container">
 
 <div class="row" style="margin-top:20px">
@@ -113,17 +101,19 @@
                 "username": $("#username").val(),
                 "password": $("#password").val()
             }
-            $.post("http://localhost:8081/Nutritional/api/user/search", JSON.stringify(formdata),
+            $.post("http://localhost:8080/Nutritional/api/user/search", JSON.stringify(formdata),
             function (data, textStatus, jqXHR) {
+				console.log(data.data);
                 if(data.data.length == 0){
                     alert("Username หรือ Password ไม่ถูกต้อง กรุณากรอกใหม่อีกครั้ง !!");
                     window.location.href = "<?php echo base_url() ?>welcome/login";
                 }
                 else{
                     var username = data.data[0].username;
-                    localStorage.setItem("usernamelocal", username);
+					localStorage.setItem("usernamelocal", username);
+					localStorage.setItem("namelocal" , data.data[0].name);
                     alert("เข้าสู่ระบบสำเร็จ");
-                    window.location.href = "<?php echo base_url() ?>welcome/";
+                    window.location.href = "<?php echo base_url() ?>";
                     
                     
                 }  

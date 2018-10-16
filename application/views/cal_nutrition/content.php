@@ -1,3 +1,6 @@
+
+<nav class="navbar navbar-inverse" id="navbar">
+</nav>
 <div class="container">
   <div class="row">
         <h1 class="text-center">สารอาหารในเมนูของคุณ</h1>

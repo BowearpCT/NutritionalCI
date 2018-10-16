@@ -1,3 +1,5 @@
+<nav class="navbar navbar-inverse" id="navbar">
+</nav>
 <div class="container-fluid">
   <div class="row">
     <h1 class="text-center">ฟอร์มแก้ไขข้อมูล</h1>
@@ -267,6 +269,7 @@
                 $.post("http://localhost:8080/Nutritional/api/master/update", JSON.stringify(formdata),
                     function (data, textStatus, jqXHR) {
                         alert(data.message);
+                        window.location.href = "<?php echo base_url() ?>/welcome/master";
                     }    
                 );
             });

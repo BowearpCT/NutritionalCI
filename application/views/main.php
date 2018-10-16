@@ -1,17 +1,15 @@
-
+<nav class="navbar navbar-inverse" id="navbar">
+</nav>
 <!-- Header -->
-<!-- <div class="container-fluid bg-5">
-  <h1>โภชนาการอาหาร</h1>
-  <h1>โภชนาการอาหาร</h1>
-  <h1>โภชนาการอาหาร</h1>
-  <h1>โภชนาการอาหาร</h1>
-</div> -->
+
+
 <div class="jumbotron bg-5">
   <div class="container">
     <h1>โภชนาการอาหาร</h1>      
     
   </div>
 </div>
+
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:1100px">
@@ -70,6 +68,7 @@
   
 <!-- End page content -->
 </div>
+
 
 <!-- Footer -->
 

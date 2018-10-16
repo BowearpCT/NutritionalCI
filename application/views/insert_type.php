@@ -5,6 +5,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
 
+<nav class="navbar navbar-inverse" id="navbar">
+</nav>
 <table class="table table-bordered" >
 <tr class="w3-hover-#f1f1f1">
 

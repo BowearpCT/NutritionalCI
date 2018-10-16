@@ -1,5 +1,6 @@
 
-
+<nav class="navbar navbar-inverse" id="navbar">
+</nav>
 
 <!-- Header -->
 
@@ -208,7 +209,8 @@
                 $.post("http://localhost:8080/Nutritional/api/master/insert", JSON.stringify(formdata),
                     function (data, textStatus, jqXHR) {
                         alert(data.message);
-                    }    
+                        window.location.href = "<?php echo base_url() ?>/welcome/master";
+                    }
                 );
             });
     });

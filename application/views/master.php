@@ -1,9 +1,19 @@
+<nav class="navbar navbar-inverse" id="navbar">
+</nav>
+
+<div class="container-fluid bg-5" >
+ <div class="row">
+    <H1 class="col-sm-offset-1">ตารางโภชนาการอาหาร</H1>
+ </div>
+</div>
+
 <div class="container-fluid">
     <div class="table-responsive">
         <table class="table">
             <thead>
                 <tr class="info"> 
                     <th colspan="2"><center>ชื่อ</center></th>
+                    <th rowspan="2"><center>ชนิด</center></th>
                     <th ><center>พลังงาน</th>
                     <th ><center>น้ำ</th>
                     <th ><center>โปรตีน</th>
@@ -36,8 +46,9 @@
                 </tr>
             </thead>
             <tbody id="result">
-            </tbody>
+            </tbody>   
         </table>
+        <a href="<?php base_url()?>/NTTCI/welcome/insert_master"><button class="btn btn-info btn-block btn-lg" ><span class="glyphicon glyphicon-plus-sign "></span></button></a>
     </div>
 </div>
 
@@ -67,6 +78,7 @@
                         strResult +='<tr>'
                                     +'<td class="text-center">' +value.thname+'</td>'
                                     +'<td class="text-center">' +value.enname+'</td>'
+                                    +'<td class="text-center">' +value.type+'</td>'
                                     +'<td class="text-center">' +value.composition.energy+'</td>'
                                     +'<td class="text-center">' +value.composition.water+'</td>'
                                     +'<td class="text-center">' +value.composition.protein+'</td>'

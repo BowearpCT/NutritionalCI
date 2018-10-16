@@ -5,6 +5,17 @@
 
 </head>
 <body> -->
+<script>
+  var usernamelocal = localStorage.getItem("usernamelocal");
+  var namelocal = localStorage.getItem("namelocal");
+  if(usernamelocal==null  ){
+    alert("กรุณาเข้าสู่ระบบก่อนทำการบันทึกข้อมูลและเรียกดูประวัติ")
+    window.location.href = "<?php echo base_url() ?>/welcome/login";
+  }
+</script>
+<nav class="navbar navbar-inverse" id="navbar">
+</nav>
+
 
 <table class="table table-bordered">
 <tr class="w3-hover-">
