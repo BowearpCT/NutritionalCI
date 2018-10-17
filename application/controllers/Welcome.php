@@ -142,5 +142,21 @@ class Welcome extends CI_Controller {
 		$this->load->view('edittype',$data);
 		$this->load->view('footer');
 	}
+
+	public function savehistory(){
+		$this->load->view('header');
+		//$this->load->view('nav');
+		$this->load->view('savehistory');
+		$this->load->view('footer');
+		
+	}
+
+	public function findhistory(){
+		$this->load->view('header');
+		//$this->load->view('nav');
+		$this->load->view('findhistory');
+		$this->load->view('footer');
+		
+	}
 	
 }

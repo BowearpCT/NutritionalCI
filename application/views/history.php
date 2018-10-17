@@ -24,64 +24,29 @@
         <center>
         <h2>HISTORY</h2>
         <h3 >ประวัติการรับประทานอาหารของคุณ</h3>
-        <br>
-        <img src="https://img.live/images/2018/10/06/fork.png" alt="fork.png" border="0" /><br><br>
         <p>Home &diams; History</p>
+        <br>
+<div class="w3-row-container">
+  <div class="w3-col s5 ">
+  บันทึกการรับประทานอาหาร<br>
+  <a href="https://img.live/image/bgKbr"><img src="https://img.live/images/2018/10/17/save.png" alt="save.png" border="0" /></a>
+  </div>
+  </div>
+  <div class="w3-col s2 ">
+    <img src="https://img.live/images/2018/10/17/double-arrow.png" alt="double-arrow.png" border="0" /></div>
+  <div class="w3-col s5 ">
+     ดูประวัติการรับประทานอาหาร<br>
+     <a href="https://img.live/image/bgiCF"><img src="https://img.live/images/2018/10/17/notebook2.png" alt="notebook2.png" border="0" /></a>
+    
+</div>
         </center>
         </th>
 
-</table>
+</table><br><br>
 
 
 
 
-<div class="w3-content" style="max-width:1100px">
-  <div class="row" >
-    <div class="col-sm-12">
-    <left>
-    <div class="col-sm-2">
-      <h3 class="center">อาหารเช้า</h3>
-      <h3 class="center">Breakfast </h3>
-      </div>
-      <img src="https://img.live/images/2018/10/06/bread.png" alt="bread.png" border="0" />
-    <left>
-    </div>
-  </div>
-  
-  <hr>
-  
-  
-  <div class="row">
-    <div class="col-sm-12">
-    <left>
-    <div class="col-sm-2">
-    <h3 class="center">อาหารเที่ยง</h3>
-    <h3 class="center">Lunch </h3>
-    </div>
-    <img src="https://img.live/images/2018/10/06/soup.png" alt="soup.png" border="0" />
-  
-    </left>
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="row">
-    <div class="col-sm-12">
-    <left>
-    <div class="col-sm-2">
-    <h3 class="center">อาหารเย็น</h3>
-    <h3 class="center">Dinner</h3>
-    </div>
-    <img src="https://img.live/images/2018/10/06/muffin.png" alt="muffin.png" border="0" />
-    </left>
-    </div>
-
-  </div>
-  
-  <hr>
-
-</div>
 
 
 
