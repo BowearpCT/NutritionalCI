@@ -1,3 +1,15 @@
+
+<script>
+  var usernamelocal = localStorage.getItem("usernamelocal");
+  var namelocal = localStorage.getItem("namelocal");
+  if(usernamelocal==null  ){
+    alert("กรุณาเข้าสู่ระบบก่อนทำการบันทึกข้อมูลและเรียกดูประวัติ")
+    window.location.href = "<?php echo base_url() ?>/welcome/login";
+  }
+</script>
+
+<nav class="navbar navbar-inverse" id="navbar">
+</nav>
 <table class="table table-bordered" >
 <tr class="w3-hover-#f1f1f1">
 
@@ -53,10 +65,13 @@
         $("#save").submit(function(e){
                 e.preventDefault();
                 var formdata = {
+                    "username" : usernamelocal,
+                    "date" : "<?php echo date('d-m-Y') ?>",
+                    "potion" : $("input[name='potion']:checked").val(),
                     "food" : $("#food").val(),
-                    "volumn" :$(#volumn).val()
+                    "volumn" :$("#volumn").val()
                 }
-                // $.post("http://localhost:8080/Nutritional/api/type/insert", JSON.stringify(formdata),
+                $.post("http://localhost:8080/Nutritional/api/history/record", JSON.stringify(formdata),
                     function (data, textStatus, jqXHR) {
                         alert(data.message);
                          window.location.reload("http://localhost:81/NutritionalCI/welcome/");

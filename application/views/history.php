@@ -29,7 +29,7 @@
 <div class="w3-row-container">
   <div class="w3-col s5 ">
   บันทึกการรับประทานอาหาร<br>
-  <a href="https://img.live/image/bgKbr"><img src="https://img.live/images/2018/10/17/save.png" alt="save.png" border="0" /></a>
+  <a href="<?php echo base_url()?>/welcome/savehistory"><img src="https://img.live/images/2018/10/17/save.png" alt="save.png" border="0" /></a>
   </div>
   </div>
   <div class="w3-col s2 ">
