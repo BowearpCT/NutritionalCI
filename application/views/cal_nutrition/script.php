@@ -300,59 +300,29 @@ $(document).ready(function(){
         $("#form").submit(function (e){ 
             e.preventDefault();
 
-            var formdata =[ 
+            var formdata =
             {
                 "cereals" : $("#cereals").val(),
-                "cerealscal" : $("#cerealscal").val()
-            },
-            {
+                "cerealscal" : $("#cerealscal").val(),
                 "plants" : $("#plants").val(),
-                "plantscal" : $("#plantscal").val()
-                            },
-            {,
-            {
+                "plantscal" : $("#plantscal").val(),
                 "seedlings" : $("#seedlings").val(),
-                "seedlingscal" : $("#seedlingscal").val()
-                            },
-            {,
-            {
+                "seedlingscal" : $("#seedlingscal").val(),
                 "vegetable" : $("#vegetable").val(),
-                "vegetablecal" : $("#vegetablecal").val()
-                            },
-            {,
-            {
+                "vegetablecal" : $("#vegetablecal").val(),
                 "fruit" : $("#fruit").val(),
-                "fruitcal" : $("#fruitcal").val()
-                            },
-            {,
-            {
+                "fruitcal" : $("#fruitcal").val(),
                 "meat" : $("#meat").val(),
-                "meatcal" : $("#meatcal").val()
-                            },
-            {,
-            {
+                "meatcal" : $("#meatcal").val(),
                 "aquatic" : $("#aquatic").val(),
-                "aquaticcal" : $("#aquaticcal").val()
-                            },
-            {,
-            {
+                "aquaticcal" : $("#aquaticcal").val(),
                 "egg" : $("#egg").val(),
-                "eggcal" : $("#eggcal").val()
-                            },
-            {,
-            {
+                "eggcal" : $("#eggcal").val(),
                 "milk" : $("#milk").val(),
-                "milkcal" : $("#milkcal").val()
-                            },
-            {,
-            {
+                "milkcal" : $("#milkcal").val(),
                 "seasoningmachine" : $("#seasoningmachine").val(),
-                "seasoningmachinecal" : $("#seasoningmachinecal").val()
-                            },
-            {
-                
-            } 
-            ];
+                "seasoningmachinecal" : $("#seasoningmachinecal").val()  
+            };
 
             // var arr = [];
             // $( ".namecal" ).each(function( index ) {

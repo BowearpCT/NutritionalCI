@@ -13,12 +13,12 @@
 
 <br>
 <br>
-<div class="container">
+<form id="form">  
+  <div class="container">
     <br>
     <div class="row">     
       <div class="col-sm-6"> <!-- //ช่อง1// -->
 
-        <form id="form">  
             <div class="row">
               <div class="col-md-6">
               <label>ธัญพืชและผลิตภัณฑ์</label>
@@ -26,19 +26,19 @@
               </div>
               <div class="col-md-5">
               <label>ปริมาณ</label>                
-                <div class="input-group">
+                <!-- <div class="input-group"> -->
                   <input type="text" class="form-control"  placeholder="กรัม" id="cerealscal" style="color: #0000FF" required>
                     <span class="input-group-btn">
                       <!-- <button class="btn  glyphicon glyphicon-plus" type="button" id="create_one"></button> -->
-                      <button type="button"  id="search" class="btn btn-primary col-md-4 btn-block ">ส่ง</button>
+                      <!-- <button type="button"  id="search" class="btn btn-primary col-md-4 btn-block ">ส่ง</button> -->
                     </span>
-                </div>
+                <!-- </div> -->
               </div>
             </div>
             <!-- <span id="temp_one"></span> -->
-        </form>
+        <!-- </form> -->
 
-          <form id="form">  
+          <!-- <form id="form">   -->
             <div class="row">
               <div class="col-md-6">
               <label>รากและหัวของพืช</label>
@@ -46,19 +46,19 @@
               </div>
               <div class="col-md-5">
               <label>ปริมาณ</label>                
-                <div class="input-group">
+                <!-- <div class="input-group"> -->
                   <input type="text" class="form-control" name="plantscal"  placeholder="กรัม" style="color: #0000FF"  required>  
                     <span class="input-group-btn">
                       <!-- <button class="btn  glyphicon glyphicon-plus" type="button" id="create_two"></button> -->
-                      <button type="submit" class="btn btn-primary col-md-4 btn-block " >ส่ง</button>
+                      <!-- <button type="submit" class="btn btn-primary col-md-4 btn-block " >ส่ง</button> -->
                     </span>
-                </div>
+                <!-- </div> -->
               </div>
             </div>
             <!-- <span id="temp_two"></span> -->
-          </form>
+          <!-- </form> -->
 
-          <form id="form">
+          <!-- <form id="form"> -->
             <div class="row">
               <div class="col-md-6">
               <label>ผลไม้เปลือกแข็ง พืชเมล็ด</label>
@@ -66,19 +66,19 @@
               </div>
               <div class="col-md-5">
               <label>ปริมาณ</label>                
-                <div class="input-group">
+                <!-- <div class="input-group"> -->
                   <input type="text" class="form-control" name="seedlingscal"  placeholder="กรัม"  style="color: #0000FF"  required>  
                     <span class="input-group-btn">
                       <!-- <button class="btn  glyphicon glyphicon-plus" type="button" id="create_three"></button> -->
-                      <button type="submit" class="btn btn-primary col-md-4 btn-block " >ส่ง</button>
+                      <!-- <button type="submit" class="btn btn-primary col-md-4 btn-block " >ส่ง</button> -->
                     </span>
-                </div>
+                <!-- </div> -->
               </div>
             </div>
             <!-- <span id="temp_three"></span> -->
-          </form>
+          <!-- </form> -->
 
-          <form id="form">
+          <!-- <form id="form"> -->
             <div class="row">
               <div class="col-md-6">
               <label>ผัก</label>
@@ -86,19 +86,19 @@
               </div>
               <div class="col-md-5">
               <label>ปริมาณ</label>                
-                <div class="input-group">
+                <!-- <div class="input-group"> -->
                   <input type="text" class="form-control" name="vegetablecal"  placeholder="กรัม"  style="color: #0000FF"  required> 
                     <span class="input-group-btn">
                       <!-- <button class="btn  glyphicon glyphicon-plus" type="button" id="create_four"></button> -->
-                      <button type="submit" class="btn btn-primary col-md-4 btn-block " >ส่ง</button>
+                      <!-- <button type="submit" class="btn btn-primary col-md-4 btn-block " >ส่ง</button> -->
                     </span>
-                </div>
+                <!-- </div> -->
               </div>
             </div>
             <!-- <span id="temp_four"></span> -->
-          </form>
+          <!-- </form> -->
 
-          <form id="form">
+          <!-- <form id="form"> -->
             <div class="row">
               <div class="col-md-6">
                 <label>ผลไม้</label>
@@ -106,23 +106,23 @@
                 </div>
               <div class="col-md-5">
               <label>ปริมาณ</label>                
-                <div class="input-group">
+                <!-- <div class="input-group"> -->
                   <input type="text" class="form-control" name="fruitcal"  placeholder="กรัม"  style="color: #0000FF"  required>
                     <span class="input-group-btn">
                       <!-- <button class="btn  glyphicon glyphicon-plus" type="button" id="create_five"></button> -->
-                      <button type="submit" class="btn btn-primary col-md-4 btn-block " id="create_five">ส่ง</button>
+                      <!-- <button type="submit" class="btn btn-primary col-md-4 btn-block " id="create_five">ส่ง</button> -->
                     </span>
-                </div>
+                <!-- </div> -->
               </div>
             </div>
             <!-- <span id="temp_five"></span> -->
-          </form>
+          <!-- </form> -->
 
         </div>
       
       <div class="col-sm-6" ><!-- //ช่อง2// -->
       
-      <form id="form">
+      <!-- <form id="form"> -->
           <div class="row">
             <div class="col-md-6">
             <label>เนื้อสัตว์</label>
@@ -130,19 +130,19 @@
             </div>
             <div class="col-md-5">
             <label>ปริมาณ</label>                
-              <div class="input-group">
+              <!-- <div class="input-group"> -->
                 <input type="text" class="form-control" name="meatcal" placeholder="กรัม"  style="color: #0000FF"  required> 
                   <span class="input-group-btn">
                     <!-- <button class="btn  glyphicon glyphicon-plus" type="button" id="create_six"></button> -->
-                    <button type="submit" class="btn btn-primary col-md-4 btn-block " id="create_six">ส่ง</button>
+                    <!-- <button type="submit" class="btn btn-primary col-md-4 btn-block " id="create_six">ส่ง</button> -->
                   </span>
-              </div>
+              <!-- </div> -->
             </div>
           </div>
           <!-- <span id="temp_six"></span> -->
-      </form>
+      <!-- </form> -->
       
-      <form id="form">
+      <!-- <form id="form"> -->
           <div class="row">
             <div class="col-md-6">
               <label>สัตว์น้ำ</label>
@@ -150,19 +150,19 @@
               </div>
               <div class="col-md-5">
               <label>ปริมาณ</label>                
-                <div class="input-group">
+                <!-- <div class="input-group"> -->
                   <input type="text" class="form-control" name="aquaticcal"  placeholder="กรัม"  style="color: #0000FF"  required>
                     <span class="input-group-btn">
                       <!-- <button class="btn  glyphicon glyphicon-plus" type="button" id="create_seven"></button> -->
-                      <button type="submit" class="btn btn-primary col-md-4 btn-block " id="create_seven">ส่ง</button>
+                      <!-- <button type="submit" class="btn btn-primary col-md-4 btn-block " id="create_seven">ส่ง</button> -->
                     </span>
-                </div>
+                <!-- </div> -->
               </div>
             </div>
             <!-- <span id="temp_seven"></span> -->
-      </form>
+      <!-- </form> -->
 
-      <form id="form">
+      <!-- <form id="form"> -->
              <div class="row">
               <div class="col-md-6">
                 <label>ไข่</label>
@@ -170,19 +170,19 @@
                 </div>
                 <div class="col-md-5">
                 <label>ปริมาณ</label>                
-                  <div class="input-group">
+                  <!-- <div class="input-group"> -->
                     <input type="text" class="form-control" name="eggcal" placeholder="กรัม"  style="color: #0000FF"  required> 
                       <span class="input-group-btn">
                         <!-- <button class="btn  glyphicon glyphicon-plus" type="button" id="create_eight"></button> -->
-                        <button type="submit" class="btn btn-primary col-md-4 btn-block " id="create_eight">ส่ง</button>
+                        <!-- <button type="submit" class="btn btn-primary col-md-4 btn-block " id="create_eight">ส่ง</button> -->
                       </span>
-                  </div>
+                  <!-- </div> -->
                 </div>
               </div>
               <!-- <span id="temp_eight"></span> -->
-      </form>
+      <!-- </form> -->
 
-      <form id="form">
+      <!-- <form id="form"> -->
           <div class="row">
             <div class="col-md-6">
             <label>นม</label>
@@ -190,19 +190,19 @@
             </div>
             <div class="col-md-5">
             <label>ปริมาณ</label>                
-              <div class="input-group">
+              <!-- <div class="input-group"> -->
                 <input type="text" class="form-control" name="milkcal"  placeholder="มิลลิลิตร"  style="color: #0000FF"  required>
                   <span class="input-group-btn">
                     <!-- <button class="btn  glyphicon glyphicon-plus" type="button" id="create_nine"></button> -->
-                    <button type="submit" class="btn btn-primary col-md-4 btn-block " id="create_nine">ส่ง</button>
+                    <!-- <button type="submit" class="btn btn-primary col-md-4 btn-block " id="create_nine">ส่ง</button> -->
                   </span>
-              </div>
+              <!-- </div> -->
             </div>
           </div>
           <!-- <span id="temp_nine"></span> -->
-      </form>
+      <!-- </form> -->
 
-      <form id="form">
+      <!-- <form id="namecal"> -->
         <div class="row">
           <div class="col-md-6">
             <label>เครื่องเทสเครื่องปรุง</label>
@@ -210,20 +210,28 @@
             </div>
             <div class="col-md-5">
             <label>ปริมาณ</label>                
-              <div class="input-group">
+              <!-- <div class="input-group"> -->
                 <input type="text" class="form-control" name="seasoningmachinecal" placeholder="กรัม"  style="color: #0000FF"  required> 
                   <span class="input-group-btn">
                     <!-- <button class="btn  glyphicon glyphicon-plus" type="button" id="create_ten"></button> -->
-                    <button type="submit" class="btn btn-primary col-md-4 btn-block " id="create_ten">ส่ง</button>
+                    <!-- <button type="submit" class="btn btn-primary col-md-4 btn-block " id="create_ten">ส่ง</button> -->
                   </span>
-              </div>
+              <!-- </div> -->
             </div>
           </div>
           <!-- <span id="temp_ten"></span> -->
-      </form>
+        </div>
+      </div>
+      <br>
+      <div>
+        <span class="input-group-btn">
+                <!-- <button class="btn  glyphicon glyphicon-plus" type="button" id="create_ten"></button> -->
+                <button type="submit" class="btn btn-primary" id="create_ten">ส่ง</button>
+        </span>
       </div>
     </div>
-  </div>
+  </form>
+
 <br>
 
 <div class="row">
