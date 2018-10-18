@@ -18,19 +18,19 @@
     <div class="row">     
       <div class="col-sm-6"> <!-- //ช่อง1// -->
 
-        <form id="cerealscal">  
+        <form id="form">  
             <div class="row">
               <div class="col-md-6">
               <label>ธัญพืชและผลิตภัณฑ์</label>
-                <input type="text" class="form-control"  placeholder="ธัญพืช" name="cereals" style="color: #0000FF"  required >
+                <input type="text" class="form-control"  placeholder="ธัญพืช" id="cereals" style="color: #0000FF"  required >
               </div>
               <div class="col-md-5">
               <label>ปริมาณ</label>                
                 <div class="input-group">
-                  <input type="text" class="form-control" name="cerealscal" placeholder="กรัม" style="color: #0000FF" required>
+                  <input type="text" class="form-control"  placeholder="กรัม" id="cerealscal" style="color: #0000FF" required>
                     <span class="input-group-btn">
                       <!-- <button class="btn  glyphicon glyphicon-plus" type="button" id="create_one"></button> -->
-                      <button type="submit" class="btn btn-primary col-md-4 btn-block ">ส่ง</button>
+                      <button type="button"  id="search" class="btn btn-primary col-md-4 btn-block ">ส่ง</button>
                     </span>
                 </div>
               </div>
@@ -38,7 +38,7 @@
             <!-- <span id="temp_one"></span> -->
         </form>
 
-          <form id="namecal">  
+          <form id="form">  
             <div class="row">
               <div class="col-md-6">
               <label>รากและหัวของพืช</label>
@@ -58,7 +58,7 @@
             <!-- <span id="temp_two"></span> -->
           </form>
 
-          <form id="namecal">
+          <form id="form">
             <div class="row">
               <div class="col-md-6">
               <label>ผลไม้เปลือกแข็ง พืชเมล็ด</label>
@@ -67,7 +67,7 @@
               <div class="col-md-5">
               <label>ปริมาณ</label>                
                 <div class="input-group">
-                  <input type="text" class="form-control" name"seedlingscal"  placeholder="กรัม"  style="color: #0000FF"  required>  
+                  <input type="text" class="form-control" name="seedlingscal"  placeholder="กรัม"  style="color: #0000FF"  required>  
                     <span class="input-group-btn">
                       <!-- <button class="btn  glyphicon glyphicon-plus" type="button" id="create_three"></button> -->
                       <button type="submit" class="btn btn-primary col-md-4 btn-block " >ส่ง</button>
@@ -78,7 +78,7 @@
             <!-- <span id="temp_three"></span> -->
           </form>
 
-          <form id="namecal">
+          <form id="form">
             <div class="row">
               <div class="col-md-6">
               <label>ผัก</label>
@@ -98,7 +98,7 @@
             <!-- <span id="temp_four"></span> -->
           </form>
 
-          <form id="namecal">
+          <form id="form">
             <div class="row">
               <div class="col-md-6">
                 <label>ผลไม้</label>
@@ -122,7 +122,7 @@
       
       <div class="col-sm-6" ><!-- //ช่อง2// -->
       
-      <form id="namecal">
+      <form id="form">
           <div class="row">
             <div class="col-md-6">
             <label>เนื้อสัตว์</label>
@@ -142,7 +142,7 @@
           <!-- <span id="temp_six"></span> -->
       </form>
       
-      <form id="namecal">
+      <form id="form">
           <div class="row">
             <div class="col-md-6">
               <label>สัตว์น้ำ</label>
@@ -162,7 +162,7 @@
             <!-- <span id="temp_seven"></span> -->
       </form>
 
-      <form id="namecal">
+      <form id="form">
              <div class="row">
               <div class="col-md-6">
                 <label>ไข่</label>
@@ -182,7 +182,7 @@
               <!-- <span id="temp_eight"></span> -->
       </form>
 
-      <form id="namecal">
+      <form id="form">
           <div class="row">
             <div class="col-md-6">
             <label>นม</label>
@@ -202,7 +202,7 @@
           <!-- <span id="temp_nine"></span> -->
       </form>
 
-      <form id="namecal">
+      <form id="form">
         <div class="row">
           <div class="col-md-6">
             <label>เครื่องเทสเครื่องปรุง</label>
@@ -227,38 +227,8 @@
 <br>
 
 <div class="row">
-    <div class="">
-      <table class="table table-bordered" id="brand-table">
-        <thead>
-          <tr>
-            <th scope="col" colspan="2"><center>ชื่อ</center></th>
-            <th scope="col" ><center>พลังงาน</th>
-            <th scope="col" ><center>น้ำ</th>
-            <th scope="col" ><center>โปรตีน</th>
-            <th scope="col" ><center>ไขมัน</th>
-            <th scope="col" ><center>คาร์โบไฮเดรต</th>
-            <th scope="col" ><center>ใยอาหาร/(เส้นใยดิบ)</th>
-            <th scope="col" ><center>เถ้า</th>
-            <th scope="col" ><center>แคลเซียม</th>
-            <th scope="col" ><center>ฟอสฟอรัส</th>
-            <th scope="col" ><center>ธาตุเหล็ก</th>
-          </tr>
- 
-          <tr>
-            <th scope="col"><center>ชื่อไทย</th>
-            <th scope="col"><center>ชื่ออังกฤษ</th>
-            <th scope="col"><center>กิโลแคลลอลี่</th>
-            <th scope="col" colspan="6"><center>กรัม</center> </th>
-            <th scope="col" colspan="3"><center>มิลลิกรัม</center> </th>
-          </tr>
-        </thead>
-        
-        
-        <p id="tbody"></p>
-        <tbody>
-       
-        </tbody>
-
-      </table>
-    </div>
+  <div class="">
+    <table class="table table-bordered" id="result">
+    </table>
   </div>
+</div>
