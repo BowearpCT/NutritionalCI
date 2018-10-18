@@ -1,3 +1,11 @@
+
+
+<style>
+table {
+  font-size:medium;
+  text-align:center;
+}
+</style>
 <nav class="navbar navbar-inverse" id="navbar">
 </nav>
 

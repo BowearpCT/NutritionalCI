@@ -16,7 +16,7 @@
         <th bgcolor="#f0f5f5">
         <center>
         <h2 >HISTORY</h2>
-        <h2 >บันทึกประวัตืการรับประทานอาหาร</h2>
+        <h2 >บันทึกประวัติการรับประทานอาหาร</h2>
         <br>
         <img src="https://img.live/images/2018/10/16/medical-history.png" alt="settings.png" border="0" /><br><br>
         <?php echo date('d F  Y') ?>
@@ -54,10 +54,20 @@
             <br><br>
         <center>
         <button class="button" type="submit" style="vertical-align:middle" id="edit"><span><font color="#FFFFFF" >SAVE</span></button>
+        
         </form>
         </center>
         </th>
 </table>
+<div class="container-fluid bg-2">
+<div class="row">
+    <div class="col-sm-offset-4 col-sm-4">
+    <a href="<?php echo base_url()?>/welcome/findhistory"><button type="button" class="btn btn-primary btn-block">HISTORY</button></a>
+    </div>
+</div>
+</div>
+
+        
 
 <!-- insert -->
 <script>
@@ -66,7 +76,7 @@
                 e.preventDefault();
                 var formdata = {
                     "username" : usernamelocal,
-                    "date" : "<?php echo date('d-m-Y') ?>",
+                    "date" : "<?php echo date('Y-m-d') ?>",
                     "potion" : $("input[name='potion']:checked").val(),
                     "food" : $("#food").val(),
                     "volumn" :$("#volumn").val()

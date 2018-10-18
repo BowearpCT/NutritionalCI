@@ -25,7 +25,7 @@
                         <input type="submit" class="btn btn-lg btn-success btn-block" value="Sign In">
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-6">
-						<a href="" class="btn btn-lg btn-primary btn-block">Register</a>
+						<a href="<?php echo base_url()?>/welcome/signup" class="btn btn-lg btn-primary btn-block">Register</a>
 					</div>
 				</div>
 			</fieldset>
@@ -112,6 +112,7 @@
                     var username = data.data[0].username;
 					localStorage.setItem("usernamelocal", username);
 					localStorage.setItem("namelocal" , data.data[0].name);
+					localStorage.setItem("lastnamelocal" , data.data[0].lastname);
                     alert("เข้าสู่ระบบสำเร็จ");
                     window.location.href = "<?php echo base_url() ?>";
                     

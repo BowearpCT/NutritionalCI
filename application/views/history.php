@@ -29,14 +29,14 @@
 <div class="w3-row-container">
   <div class="w3-col s5 ">
   บันทึกการรับประทานอาหาร<br>
-  <a href="<?php echo base_url()?>/welcome/savehistory"><img src="https://img.live/images/2018/10/17/save.png" alt="save.png" border="0" /></a>
+  <a href="savehistory"><img src="https://img.live/images/2018/10/17/save.png" alt="save.png" border="0" /></a>
   </div>
   </div>
   <div class="w3-col s2 ">
     <img src="https://img.live/images/2018/10/17/double-arrow.png" alt="double-arrow.png" border="0" /></div>
   <div class="w3-col s5 ">
      ดูประวัติการรับประทานอาหาร<br>
-     <a href="https://img.live/image/bgiCF"><img src="https://img.live/images/2018/10/17/notebook2.png" alt="notebook2.png" border="0" /></a>
+     <a href="<?php echo base_url()?>/welcome/findhistory"><img src="https://img.live/images/2018/10/17/notebook2.png" alt="notebook2.png" border="0" /></a>
     
 </div>
         </center>

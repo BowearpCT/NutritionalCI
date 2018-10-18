@@ -18,7 +18,7 @@ else{
             +'<a class="navbar-brand" href="'+base_url+'/NTTCI">โภชนาการอาหาร</a>'
             +'</div>'
             +'<ul class="nav navbar-nav navbar-right">'
-            +'<li><a href=""><span class="glyphicon glyphicon-user"></span>'+namelocal+'</a></li>'
+            +'<li><a href="" onclick="gohistory();"><span class="glyphicon glyphicon-user"></span>'+namelocal+'</a></li>'
             +'<li><a href="" onclick="logout();"><span class="glyphicon glyphicon-log-in"></span>'
             +'logout</a>'
             +'</li>'
@@ -29,4 +29,7 @@ function logout (){
     localStorage.removeItem("namelocal");
     localStorage.removeItem("usernamelocal");
     window.location.href = "welcome/login";
+}
+function gohistory(){
+    window.location.href = "welcome/history";
 }

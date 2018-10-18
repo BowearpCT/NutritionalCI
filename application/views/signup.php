@@ -68,6 +68,7 @@
                 $.post("http://localhost:8080/Nutritional/api/user/insert", JSON.stringify(formdata),
                     function (data, textStatus, jqXHR) {
                         alert(data.message);
+                        window.location.href = "<?php echo base_url() ?>/welcome/login";
                     }
                 );
             });
