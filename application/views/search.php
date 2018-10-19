@@ -36,7 +36,7 @@
                 "enname" : $('#name').val()
             }
             let result = $("#result");
-            $.post("http://localhost:8080/Nutritional/api/nutritional/search", JSON.stringify(formdata),
+            $.post("http://localhost:8080/Nutritional/api/calnutritional/findOne", JSON.stringify(formdata),
                 function (data, textStatus, jqXHR) {
                     var listOfResult = data.data;
                      var strResult = '<thead>'

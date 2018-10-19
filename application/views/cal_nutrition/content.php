@@ -226,7 +226,7 @@
       <div>
         <span class="input-group-btn">
                 <!-- <button class="btn  glyphicon glyphicon-plus" type="button" id="create_ten"></button> -->
-                <button type="submit" class="btn btn-primary" id="create_ten">ส่ง</button>
+                <button type="submit" class="btn btn-primary" >ส่ง</button>
         </span>
       </div>
     </div>
